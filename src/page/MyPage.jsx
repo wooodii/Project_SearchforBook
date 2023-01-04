@@ -46,6 +46,7 @@ const MyPage = () => {
                 </Row>
                 <Row style={{margin : "8vh 0 8vh 0"}}>
                     <Col >
+
                         <div style={{overflow : "scroll"}} className="reservationbox">
                             <p className="searchbooktitle"> a searching book </p>
                                 <div >
@@ -61,6 +62,7 @@ const MyPage = () => {
                                     </Row>
                                 </div>
                         </div> 
+                    
                     </Col>
                     <Col>
                         <div className="borrowbox">

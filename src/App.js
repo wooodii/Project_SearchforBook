@@ -15,13 +15,13 @@ import Login from './page/Login';
 import PageNotFound from './page/PageNotFound';
 import MyPage from './page/MyPage';
 import { DataProvider } from './context/DataContext';
-import Menubar from './components/Menubar';
 import RecommendBookPrint from './page/RecommendBookPrint';
 import LibraryInfoPage from './page/LibraryInfoPage';
 import SearchBook from './components/BookSearch/SearchBook';
 import SearchTitle from './components/BookSearch/SearchTitle';
 import SearchLib from './components/BookSearch/SearchLib';
 import SearchAuthor from './components/BookSearch/SearchAuthor';
+import Menubar from './components/Menubar/Menubar';
 
 function App() {
   return (
@@ -39,7 +39,7 @@ function App() {
                     </Route>  
                   </Route>
                   
-                  <Route path='/SearchBook' element = {<SearchBook />}/>
+                  <Route path='/SearchBook' element = {<SearchBook />}></Route>
                   <Route path='/LibInfo' element = {<LibraryInfoPage />}/> 
                   <Route path='/loginform' element = {<Login />}/>
                   <Route path='/mypage' element = {<MyPage />} />

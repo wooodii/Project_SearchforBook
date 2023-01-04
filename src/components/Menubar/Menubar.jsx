@@ -1,8 +1,8 @@
-import React, { Component } from "react";
+import React from "react";
 import { useState } from "react";
-import { Link, NavLink, Outlet } from "react-router-dom";
+import { NavLink, Outlet } from "react-router-dom";
 import Slider from "react-slick";
-
+import '../Menubar/Menubar.scss'; 
 
 const Menubar = () => {
 
@@ -30,19 +30,16 @@ const Menubar = () => {
 
       return (
         <>
-        <Slider {...settings} style={{ marginTop : "2em", marginRight : "0em"}}>
+        <Slider className="menu_btn" {...settings} style={{ marginTop : "2em", marginRight : "0em", textDecorationLine : "none"}}>
           {boardlist.map((menu, index) => (
-            <NavLink style={{textDecorationLine : "none"}} to={`/Recommendbook/${menu.id}`}>
-            <button 
-              key={menu.id} className="menubarBtn">
-            <div
+            <NavLink className="menu_btn0" key={menu.id} to={`/Recommendbook/${menu.id}`}>
+            <button className ="menu_btn1">
+            <div className="menubar_btn2"
                 style={{backgroundColor :"#eee", width : "80px", 
                   height : "80px", borderRadius : "50px"}}>
             </div>
+            <p style={{color : "black", marginTop : "0.5em"}}> {menu.title}</p> 
             </button>
-            <p>
-              <span style={{color : "black", WebkitTextDecorationLine : "none"}}> {menu.title}</span> 
-            </p>
             </NavLink> ))}
         </Slider>
         <Outlet/>
