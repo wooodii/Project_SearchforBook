@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Playfair+Display+SC:wght@700&family=Shrikhand&family=Tinos:ital@0;1&family=Zen+Antique&display=swap');
+@font-face {
+    font-family: 'GowunBatang-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/GowunBatang-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.BOX{
+    font-family : 'GowunBatang-Regular';
+}
+.saveBox{
+    border: 2px solid black;
+    height: 80vh;
+    margin : 10px 0 20px 0 ;
+}
+
+.mypage {
+    font-size : 4em;
+    font-family: 'Playfair Display SC', serif;
+}
+
+.mypageimage {
+    border : 2px solid black;
+    width : 15em;
+    height : 15em;
+    border-radius: 100%;
+}
+
+.titleBox{
+    margin-top : 20px;
+}
+
+.mbtibox{
+    margin-top : 5vh;
+    border :2px solid black;
+    border-radius: 20px;
+    height : 60vh;
+}
+
+.mypagembti{
+    font-size : 1.8em;
+    font-family: 'Playfair Display SC', serif;
+}
+
+.bookcommentbox{
+    margin-top : 5vh;
+    border : 2px solid black;
+    border-radius: 20px;
+    height : 60vh;
+}
+
+.bookcomment{
+    font-size : 1.8em;    
+    font-family: 'Playfair Display SC', serif;
+}
+
+.likebtn{
+    background-color: black;
+}
+
+.unlikebtn{
+    background-color: black;    
+}
+
+.libraryPickbox{
+    margin-top: 5vh;
+    border : 2px solid black;
+    border-radius: 20px;
+    height : 20vh;
+}
+
+.librarypick{
+    font-size : 1.8em;
+    font-family: 'Playfair Display SC', serif;
+}
+
+.reservationbox{
+    border : 2px solid black;
+    border-radius: 20px;
+    height: 20vh;
+    margin-top : 5vh;
+    font-size : 1.5em;
+    font-family: 'Playfair Display SC', serif;
+}
+
+.bookAddList1{
+    font-family: 'GowunBatang-Regular';
+    font-size: 0.8em;
+    word-wrap: break-word;
+}
+
+.bookAddList2{
+    font-family: 'GowunBatang-Regular';
+    font-size: 0.8em;
+    word-wrap: break-word;
+}
+
+.bookAddList3{
+    font-family: 'GowunBatang-Regular';
+    font-size: 0.8em;
+    word-wrap: break-word;
+}
+
+.borrowedbooktitle{
+    font-size : 1.5em;
+    font-family: 'Playfair Display SC', serif;
+}
+
+.borrowbox{
+    border : 2px solid black;
+    border-radius: 20px;
+    height: 30vh;
+}
+.reservationbook{
+    font-size : 1.8em;
+    font-family: 'Playfair Display SC', serif;
+}
+
+
+/*Star css*/
+.starColor{
+    color : green;
+}

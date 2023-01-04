@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Playfair+Display+SC:wght@700&family=Shrikhand&family=Tinos:ital@0;1&family=Zen+Antique&display=swap');
+
+h4{
+    font-weight : bold;
+    margin-top :1.3em;
+}
+
+.cityBox{
+    margin : 2em;
+    font-size: 1.2em;
+}
+
+.cardlink{
+    text-decoration: none;
+    color : black;
+}
+
+.cardTitle{
+    font-size : 3.7em;
+    font-family: 'Playfair Display SC', serif;
+}
+
+.Cityofreadbox{
+    border : 2px solid black;
+    padding: 10vh;
+}
+
+.barrowbook{
+    height : 14rem;
+}
+
+.onebookone{
+    height : 14rem;
+    background-color: lightgray;
+}
+
+.booknanum{
+    height : 14rem;
+}
+
+.bookparty{
+    height : 14rem;
+}
+
+.cityBoxImg{
+    -webkit-transform: rotate(10deg);
+    -moz-transform: rotate(15deg);
+    -o-transform: rotate(15deg);
+    -ms-transform: rotate(100deg);
+    box-shadow: 10px 10px 5px gray;
+    transition: all 0.2s linear;
+}
+
+.cityBoxImg:hover{
+    transform: scale(1.15);
+}

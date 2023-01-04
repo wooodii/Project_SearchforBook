@@ -1,0 +1,68 @@
+.HomeCon{
+    display : flex;    
+    flex-direction: row;
+    margin-top : 5vh;
+}
+
+.HomTitle{
+    display :block;
+    width : 100%;
+    float : left;
+}
+
+.title{
+    margin : 5vh 0 0 5vh;
+}
+
+.HotTopic{
+    height : 2em;
+    animation : popup 6s 1s infinite alternate;
+}
+
+.HotTopic1 {
+    width : 20em;
+    height : 5em;
+    animation : popup 6s 10s infinite alternate;
+}
+
+/** 2초간 진행하고 1초의 딜레이 무한반복 , alternate로 애니메이션 연결*/ 
+.HotTopic:hover{
+    font-weight: bold;
+}
+
+.HotTopic1:hover {
+    font-weight: bold;
+}
+@keyframes popup{
+    0% {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    30% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+    60% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+    
+    100% { 
+        opacity: 0;
+        transform: translateY(100%);
+    }
+}
+
+.TopicMargin{
+    display: flex;
+    width : 50%;
+    color : black;
+}
+
+.com{
+    color : red
+}
+
+.topic{
+    
+}

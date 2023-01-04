@@ -1,0 +1,48 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css");
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;  
+}
+
+.flip { 
+  width: 130px;
+  height: 180px;
+  position: relative; 
+  display: inline-block;
+  perspective: 1100px;
+  margin: 1rem 1rem 2.3rem 1rem;
+}
+
+.card {
+  width: 100%; 
+  height: 100%;
+  position: relative;
+  transition: .4s;
+  transform-style: preserve-3d;
+} 
+
+.front, .back {
+  position: absolute;
+  width: 100%; 
+  height: 100%;  
+  backface-visibility: hidden;
+  justify-content: center;
+  align-items: center;
+  color: black;
+}
+
+.front {
+  background-color: #eee;
+}
+
+.back { 
+  background: #fff; 
+  transform: rotateY(180deg);
+}
+
+.flip:hover .card {
+  transform: rotateY(180deg);
+}

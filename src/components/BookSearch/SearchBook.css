@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Playfair+Display+SC:wght@700&family=Shrikhand&family=Tinos:ital@0;1&family=Zen+Antique&display=swap');
+
+.searchBox{
+    text-align: center;
+    display:block;
+    margin : 5vh 0 10vh 0;
+}
+
+button{
+    width : 10vw;
+    all:unset;
+}
+
+.ResultTitle{
+    font-size: 50px;
+    font-weight: bold;
+    margin-top : 5vh;
+}
+
+.ResultBox{
+    display: block;
+    height : 75vh;
+    margin-top : 0px;
+}
+
+.searchMenu{
+    display:inline-block;
+    padding-right : 6px;
+}
+
+.searchForm{
+    display: inline-block;
+    
+}
+
+.searchResultNav{
+    font-weight: bold;
+}
+
+.searchBox{
+    text-align: center;
+    display:block;
+    margin : 5vh 0 3vh 0;
+}
+
+.ResultTitle{
+    font-family: 'Playfair Display SC', serif;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.searchMenu{
+    display:inline-block;
+    margin-right: 5px;
+}
+
+.searchForm{
+    display: inline-block;
+}
+
+.searchResultNav{
+    font-weight: bold;
+}
+
+
+.searchBtn{
+    width: 50px;
+}

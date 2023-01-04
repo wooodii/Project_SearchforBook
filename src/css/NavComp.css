@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Playfair+Display+SC:wght@700&family=Shrikhand&family=Tinos:ital@0;1&family=Zen+Antique&display=swap');
+
+.Login{
+    justify-content: end;
+}
+
+.navTitle{
+    font-family: 'Playfair Display SC', serif;
+}

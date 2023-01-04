@@ -1,0 +1,13 @@
+{"getBookSearchWordBest":
+{"header":{"resultCode":"00","resultMsg":"NORMAL_CODE"},
+"body":{"items":{"item":[
+    {"search_word":"신비아파트","rank":"10","type":"단행본"},
+    {"search_word":"순례주택","rank":"9","type":"단행본"},
+    {"search_word":"불편한편의점","rank":"8","type":"단행본"},
+    {"search_word":"전천당","rank":"7","type":"단행본"},
+    {"search_word":"에그박사","rank":"6","type":"단행본"},
+    {"search_word":"역행자","rank":"5","type":"단행본"},
+    {"search_word":"파친코","rank":"4","type":"단행본"},
+    {"search_word":"하얼빈","rank":"3","type":"단행본"},
+    {"search_word":"불편한 편의점","rank":"2","type":"단행본"},
+    {"search_word":"흔한남매","rank":"1","type":"단행본"}]},"numOfRows":10,"pageNo":1,"totalCount":10}}}

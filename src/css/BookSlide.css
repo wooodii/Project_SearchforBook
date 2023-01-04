@@ -1,0 +1,12 @@
+.booklabel{
+    display: block;
+    margin-bottom: 4vh;
+    font-size: 1.2em;
+    font-weight: 300;
+    word-break: break-all;
+    word-wrap: break-all;
+}
+
+.bookrank::after{
+    border-width:15px 10px; left:50%; margin-left:-10px;
+}

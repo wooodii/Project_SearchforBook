@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Playfair+Display+SC:wght@700&family=Shrikhand&family=Tinos:ital@0;1&family=Zen+Antique&display=swap');
+
+.RecommendContainer{
+    height: 70vmin;
+    max-height: 70vmin;
+}
+
+.section11 {
+    max-height: 50vh;
+}
+
+.section22 {
+    height : 70vh;
+    max-height: 100vh;
+}
+
+.newBook{
+    font-family: 'Playfair Display SC', serif;
+    margin-top : 50px;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.recommendBook{
+    font-family: 'Playfair Display SC', serif;
+    margin-top : 50px;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.bookSlider{ 
+    display: flex;
+    margin : 0 5vw 0 5vw ;
+    align-items: center;
+    justify-content : center;
+    max-width: 70em;
+    max-height : 40em;
+}
+
+
+.mbtiBox{
+    border: 2px solid black;
+    max-height: 150vh;
+    
+}

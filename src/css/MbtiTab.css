@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Playfair+Display+SC:wght@700&family=Shrikhand&family=Tinos:ital@0;1&family=Zen+Antique&display=swap');
+
+.mbtiNav{
+    font-size: 2.5em;
+    font-weight: 700;
+    font-family : "Playfair Display SC";
+}
+
+/*mbt i , mbtie*/
+.tabContainer{
+    width : 100%;
+    height :60vh;
+    max-height:60vh;
+    margin-top : 5vh;
+}
+
+.tabMenu1{
+    list-style: none;
+    display : flex;
+    font-size: 0.8em;
+    margin-right : 10vw;
+}
+
+.tabMenu2{
+    display : flex;
+    list-style: none;
+    display : flex;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+
+.tabTitle{
+    margin : 0.5em;
+    border : 2px solid black;
+    padding : 0.2em;
+    border-radius: 5px;
+}
+
+.subtitle{
+    font-size : 1em;
+    font-weight: bold;
+}
+
+.booktitle{
+    font-size : 1em;
+    font-weight: bold;
+}
+
+.description{
+    word-wrap :break-word;
+    font-size: 0.7em;
+}
+
+.dataIbox{
+}
+
+.dataEbox{
+    width : "100%";
+    max-height : "20%";
+}

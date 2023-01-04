@@ -1,0 +1,35 @@
+.newbookbox{
+    all :unset;
+    margin : 10vh 10vh 0 10vh;
+}
+
+.imgbook{
+    width :30vmin;
+    height:30vmin;
+}
+
+.newbookinfo{ 
+    margin : 0 0 0 -10vim;
+}
+
+.libname{
+    font-size :1em;
+    font-weight: bold;
+}
+
+.titleinfo{
+    font-weight: bold;
+    font-size : 0.7em;
+}
+
+.author{
+    font-weight: bold;
+}
+
+.updatebox{
+    margin : 5vh 5vh 0 5vh;
+}
+
+.subTitle{
+    font-size: 1.5em;
+}
