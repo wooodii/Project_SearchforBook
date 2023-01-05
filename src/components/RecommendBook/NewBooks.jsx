@@ -1,9 +1,9 @@
 import React from "react";
-import '../css/NewBooks.css';
+import './NewBooks.css';
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 import { Col, Row } from "react-bootstrap";
-import Loading from "./Loading";
+import Loading from "../Loading";
 import { useState } from "react";
 import { useEffect } from "react";
 

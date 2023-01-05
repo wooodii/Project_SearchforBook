@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { HiStar, HiOutlineStar } from "react-icons/hi2";
-import '../css/MyPage.css';
+import './MyPage.css';
 
 const Star = () => {
 

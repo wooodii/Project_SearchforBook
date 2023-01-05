@@ -1,10 +1,11 @@
 import { Button, Col, Container, Row } from "react-bootstrap";
-import '../css/MyPage.css';
+import '../components/MyPage/MyPage.css';
 import DataContext from "../context/DataContext";
 import { useContext, useEffect, useState } from "react";
 import TodoComp from "../components/TodoComp";
 import Profile from "./Profile";
-import ReviewModal from "./ReviewModal";
+import ReviewModal from "../components/MyPage/ReviewModal";
+
 
 const MyPage = () => {
     const {state} = useContext(DataContext);

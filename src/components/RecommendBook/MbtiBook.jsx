@@ -1,6 +1,5 @@
-import { data } from "jquery";
-import { Col, Row } from "react-bootstrap";
-import '../css/MbtiBook.css';
+import {Row } from "react-bootstrap";
+import './MbtiBook.css';
 
 const MbtiBook = () => {
   const MbtiBook = [
@@ -154,7 +153,7 @@ const MbtiBook = () => {
              
             <div class="back">
               <Row>
-                <img style={{ width: "160px", height: "180px"}} src={require(`../asset/mbti/${item.img}`) }></img>
+                <img style={{ width: "160px", height: "180px"}} src={require(`../../asset/mbti/${item.img}`) }></img>
               </Row>
                 <Row>
                   <div>

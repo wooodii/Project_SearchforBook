@@ -8,7 +8,6 @@ import "slick-carousel/slick/slick-theme.css";
 // switch == Routes
 import {Route, Routes} from 'react-router-dom';
 import NavComp from './components/NavComp'
-import Home from './page/Home';
 import Layout from './page/Layout';
 import RecommendBook from './page/RecommendBook';
 import Login from './page/Login';
@@ -22,6 +21,7 @@ import SearchTitle from './components/BookSearch/SearchTitle';
 import SearchLib from './components/BookSearch/SearchLib';
 import SearchAuthor from './components/BookSearch/SearchAuthor';
 import Menubar from './components/Menubar/Menubar';
+import HomePage from './page/HomePage';
 
 function App() {
   return (
@@ -30,8 +30,8 @@ function App() {
       <NavComp/>     
           <Routes>
                 <Route path='/' element = {<Layout />}>
-                  <Route path='/Home' element = {<Home />}/>
-                  <Route exact path='/' element = {<Home />}/>
+                  <Route path='/Home' element = {<HomePage />}/>
+                  <Route exact path='/' element = {<HomePage />}/>
 
                   <Route path='/RecommendBook' element = {<RecommendBook />}>
                    <Route path='/RecommendBook' element = {<Menubar/>}>
@@ -41,6 +41,8 @@ function App() {
                   
                   <Route path='/SearchBook' element = {<SearchBook />}></Route>
                   <Route path='/LibInfo' element = {<LibraryInfoPage />}/> 
+
+
                   <Route path='/loginform' element = {<Login />}/>
                   <Route path='/mypage' element = {<MyPage />} />
                   <Route path = "*" element={<PageNotFound />} />

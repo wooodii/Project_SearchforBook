@@ -2,8 +2,8 @@ import { Checkbox } from "@mui/material";
 import { useContext, useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import {FcAdvertising, FcClock, FcLike, FcLikePlaceholder, FcLock, FcOrganization, FcPhone } from "react-icons/fc"; 
-import '../css/LibraryInfo.css';
-import DataContext from '../context/DataContext'
+import './LibraryInfo.css';
+import DataContext from '../../context/DataContext'
 
 const LibraryInfomation = (
         {key, 도서관명, 소재지도로명주소, 휴관일, 평일운영시작시각, 평일운영종료시각, 

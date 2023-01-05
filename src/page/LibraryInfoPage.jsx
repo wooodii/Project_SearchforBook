@@ -1,12 +1,11 @@
 import { useState } from "react";
 import { Col, Container,  Row } from "react-bootstrap";
-import LibraryInfomation from "../components/LibraryInfomation";
-import "../css/LibraryInfo.css";
+import "../components/LibraryInfo/LibraryInfo.css";
 import PageNotFound from "./PageNotFound";
 import LibraryList from '../json/LibraryList.json';
 import Pagination from "../components/Pagination";
 import BusanMap from "../components/LibraryInfo/BusanMap";
-
+import LibraryInfomation from "../components/LibraryInfo/LibraryInfomation";
 const LibraryInfoPage = () => {
     const [searchLib, setSearchLib] = useState("");
     const [limit, setLimit] = useState(2);

@@ -1,9 +1,9 @@
 import { Col, Row } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
-import CommentInput from "../components/CommentInput";
-import Star from "../components/Star";
+import CommentInput from "../CommentInput";
 import { TiThumbsUp, TiThumbsDown } from "react-icons/ti";
+import Star from './Star';
 
 const ReviewModal = (props) => {
   return (

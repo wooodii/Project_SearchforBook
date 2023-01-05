@@ -1,9 +1,6 @@
-const ImgData = () => {
-    //  11: 18 
+const ImgData = ({url}) => {
     return (
-        <>
-        
-        </>
+        <img src={url}></img>
     );
 }
  

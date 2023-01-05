@@ -1,6 +1,6 @@
 import { Container, Row, Col } from 'react-bootstrap';
 import Slider from 'react-slick';
-import '../css/BookSlide.css';
+import './BookSlide.css';
 
 const BookSlide = () => {
     const settings = {
@@ -39,7 +39,7 @@ const BookList = [
                     <div style={{position : "relative"}}>
                       <span className='bookrank' style={{position: "absolute", left : "1.2em", backgroundColor : "red", color : "white", 
                             padding : "0.4em 0.6em", borderBottomLeftRadius : "5px", borderBottomRightRadius : "5px", zIndex : "999", fontWeight : "500"}}> {book.id} </span>
-                      <img style={{width : "80%", height : "100%", objectFit: "fill"}} src={require(`../asset/weeklybest/${book.bookImg}`) }></img>
+                      <img style={{width : "80%", height : "100%", objectFit: "fill"}} src={require(`../../asset/weeklybest/${book.bookImg}`) }></img>
                     </div>
                   </Row>
                   <Row> 

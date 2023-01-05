@@ -1,7 +1,8 @@
-import BookSlide from "../components/BookSlide";
 import BookStory from "../components/BookStory";
-import MbtiBook from "../components/MbtiBook";
-import NewBooks from "../components/NewBooks";
+import MbtiBook from "../components/RecommendBook/MbtiBook";
+import NewBooks from "../components/RecommendBook/NewBooks";
+import BookSlide from '../components/RecommendBook/BookSlide';
+
 // import mixtape1 from '../video/mixtape1.mp4';
 
 const RecommendBookPage = () => {
