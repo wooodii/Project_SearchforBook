@@ -36,10 +36,10 @@ const Menubar = () => {
             <button className ="menu_btn1">
             <div className="menubar_btn2"
                 style={{backgroundColor :"#eee", width : "80px", 
-                  height : "80px", borderRadius : "50px"}}>
+                  height : "80px", borderRadius : "40px"}}>
             </div>
-            <p style={{color : "black", marginTop : "0.5em"}}> {menu.title}</p> 
             </button>
+            <p style={{color : "black", marginTop : "0.5em"}}> {menu.title}</p> 
             </NavLink> ))}
         </Slider>
         <Outlet/>

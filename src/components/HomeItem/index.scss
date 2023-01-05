@@ -5,6 +5,7 @@
 
     .title-item{
         position :relative;
+        display : flex;
     }
 
     img{
@@ -15,13 +16,15 @@
         height : clamp(200px, 20vw, 20vw);
         object-fit: cover;
         pointer-events : none; 
+        // 적용x ㅠ
+        transition : transform 1s cubic-bezier(0.165, 0.84, 0.44, 1);
     }
 
     .menu-title {
-    font-size : 8.5vw;
-    text-transform: lowercase;
+    font-size : 5vw;
     z-index: 1;
     line-height: 1.1;
+    margin : 1em 0;
     }
 
     .info-block{
@@ -33,15 +36,20 @@
         z-index : 1;
         text-align : left;
         font-size : 20px;
+        
         .info-block-header{
             margin-bottom : 20px;
             color : black;
             font-weight: 500;
             font-size: 24px;
 
+            svg{
+                margin-right : 4px;
+            }
+
             span {
                 display: flex;
-                align-items: center;
+
             }
 
             p{
@@ -49,6 +57,7 @@
                 overflow: hidden;
                 color : #999;
                 span{
+                    opacity: 0;
                     display : block;
                     transition: all 0.25s ease-in-out;
                 }

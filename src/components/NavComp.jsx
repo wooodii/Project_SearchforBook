@@ -39,17 +39,16 @@ function NavComp() {
     <Navbar bg="light" expand="lg" style={{display : "fixed", top: "0"}}>
       <Container fluid>
         <Navbar.Brand href="/Home"> <div className='navTitle' style={{marginLeft : "1em"}}> Search for Books </div> </Navbar.Brand>
+        
         <Navbar.Toggle aria-controls="navbarScroll" />
+
         <Navbar.Collapse id="navbarScroll" style={{display : "relative"}}>
 
-              <Nav 
-              style={{display : "absolute", margin : "0 auto"}}
-              className="me-auto my-2 my-lg-0"
-              navbarScroll>
-              <button style={{marginLeft : "3em", marginRight : "1.5em", fontSize : "14px"}} onClick={() => (navigate('/Home'))}>  Home </button>
-              <button style={{marginRight : "1.5em",  fontSize : "14px"}} onClick={() => (navigate('/RecommendBook/1'))}> Recommend Book</button>
-              <button style={{marginRight : "1.5em",  fontSize : "14px"}} onClick={() => (navigate('/SearchBook'))}>  Search Book</button>
-              <button style={{marginRight : "1.5em",  fontSize : "14px"}} onClick={() => (navigate('/LibInfo'))} > Library Infomation </button>
+            <Nav>
+              <button style={{marginRight : "1.5em", fontSize : "14px"}} onClick={() => (navigate('/Home'))}>  홈 </button>
+              <button style={{marginRight : "1.5em",  fontSize : "14px"}} onClick={() => (navigate('/RecommendBook/1'))}> 도서추천</button>
+              <button style={{marginRight : "1.5em",  fontSize : "14px"}} onClick={() => (navigate('/SearchBook'))}>  도서검색</button>
+              <button style={{marginRight : "1.5em",  fontSize : "14px"}} onClick={() => (navigate('/LibInfo'))} > 도서관정보 </button>
             </Nav>
           
           

@@ -1,6 +1,9 @@
-const Title = ({title}) => {
+import './index.scss';
+const Title = ({title, handleMouseEnter, handleMouseLeave}) => {
     return (
-        <div className="title-item">
+        <div className="title-item"
+            onMouseEnter={handleMouseEnter}
+            onMouseLeave={handleMouseLeave}>
             <h1 className="menu-title">{title}</h1>
         </div>
     );
