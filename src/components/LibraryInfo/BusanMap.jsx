@@ -1,4 +1,4 @@
-// import '../css/BusanMap.css';
+// import './css/BusanMap.css';
 
 // useRef 사용
 const BusanMap = () => {

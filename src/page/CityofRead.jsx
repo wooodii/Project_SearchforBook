@@ -8,8 +8,10 @@ const CityofRead = () => {
         <h2 className='cardTitle'> Busan, <br/> the city of reading books</h2>
         <p>부산시민이라면 참여할 수 있는 도서관련 캠페인입니다.</p>
         <Row style={{marginTop : "5vh"}}>
-            <Col>
-                <a className='cardlink' href="https://library.busan.go.kr:8585/baro/homepage/main.do">
+            <Col style={{border : "2px solid black", borderRadius : "10px", marginRight : "1.5em"}}>
+
+                <a
+                  className='cardlink' href="https://library.busan.go.kr:8585/baro/homepage/main.do">
                     <div className="barrowbook"> 
                          <div className="cityBox" style={{position : "relative", zIndex : "20", display : "flex"}}> 
                         <h4 style={{position : "absolute", zIndex : "-100", top : "-1.5em"}}>Lending to local bookstores</h4> 
@@ -24,7 +26,7 @@ const CityofRead = () => {
                 </a>
                
             </Col>
-            <Col>
+            <Col style={{border : "2px solid black", borderRadius : "10px"}}>
                 <a className='cardlink' href="https://home.pen.go.kr/siminlib/cm/cntnts/cntntsView.do?mi=13256&cntntsId=1462">
                     <div className="onebookone"> 
                          <div className="cityBox" style={{position : "relative", zIndex : "20", display : "flex"}}> 
@@ -40,10 +42,7 @@ const CityofRead = () => {
             </Col>
         </Row>
         <Row>
-            <div>　</div>
-        </Row>
-        <Row>
-            <Col>
+            <Col style={{border : "2px solid black", borderRadius : "10px", marginTop : "1.5em", marginRight : "1.5em"}}>
                 <a className='cardlink' href="https://library.busan.go.kr/portal/html.do?menu_idx=24">
                     <div className="booknanum"> 
                 <h4>Happy Book Sharing</h4> 
@@ -57,7 +56,7 @@ const CityofRead = () => {
                 
             </Col>
             
-            <Col>
+            <Col style={{border : "2px solid black", borderRadius : "10px", marginTop : "1.5em"}}>
             <a className='cardlink' href="https://korearf.kpipa.or.kr/" >
                 <div className="bookparty"> 
                <h4>Reading Culture Festival</h4> 

@@ -4,8 +4,9 @@ import "../components/LibraryInfo/LibraryInfo.css";
 import PageNotFound from "./PageNotFound";
 import LibraryList from '../json/LibraryList.json';
 import Pagination from "../components/Pagination";
-import BusanMap from "../components/LibraryInfo/BusanMap";
 import LibraryInfomation from "../components/LibraryInfo/LibraryInfomation";
+import BusanMap from "../components/LibraryInfo/BusanMap";
+
 const LibraryInfoPage = () => {
     const [searchLib, setSearchLib] = useState("");
     const [limit, setLimit] = useState(2);
@@ -13,29 +14,26 @@ const LibraryInfoPage = () => {
     const offset = (page - 1)*limit;
 
     return ( 
-        <Container className="LibInfoBox">
+        <div style={{margin : "0 10em"}} className="LibInfoBox">
                 <Row style={{margin : "5vh", display :"flex", alignItem:"center", justifyContent:"center"}}>
                     <h1 className="libTitle"> Contact Library </h1>
-                    <p>찾으시는 지역을 선택하고, 해당 지역 내 도서관에 관한 정보를 제공받으세요</p>
+                    <p style={{fontSize : "1.2em"}}>찾으시는 지역을 선택하고, 해당 지역 내 도서관에 관한 정보를 제공받으세요</p>
                 </Row>
                 <Row>
                     <input style={{
                         boxSizing: "border-box",
-                        width : "65em",
                         height : "5vh",
-                        margin : " 0 15vh 5vh 5vh",
                         alignItems: "center",
                         justifyContent :"center",
-                    }} type = "text" placeholder = "찾고자하는 도서관명을 입력하세요" onChange = {e => {setSearchLib(e.target.value)}} />
+                    }} type = "text" placeholder = "찾고자하는 도서관명을 입력하세요" 
+                    onChange = {e => {setSearchLib(e.target.value)}} />
                 </Row>
                 <Row>
                     <Col xs={6}>
                         <BusanMap style={{width : "100%"}}/>
                     </Col>
                     <Col xs={6}>
-                    <div style={{
-                        height : "60vh", marginTop : "5vh"
-                            }} >
+                    <div style={{ marginTop : "5vh"}} >
                         {LibraryList.filter((val) => {
                             if(searchLib == "" ){
                                 return val;
@@ -56,17 +54,18 @@ const LibraryInfoPage = () => {
                                 도서관전화번호={val.도서관전화번호} 홈페이지주소={val.홈페이지주소} > </LibraryInfomation> 
                         })}
                     </div>
-                    </Col>
-                </Row>
-                <Row>
                 <Pagination 
                         total={LibraryList.length}
                         limit={limit}
                         page={page}
                         setPage={setPage}/>
+
+                    </Col>
+                </Row>
+                <Row>
                 </Row>
                 
-        </Container>
+        </div>
     );
 }
 

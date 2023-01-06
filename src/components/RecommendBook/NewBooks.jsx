@@ -25,30 +25,34 @@ const NewBooks = () => {
 
     return ( 
         <Row>
-        <Col xs={9}>
-        {bookInfo ?
-            bookInfo.filter((i, index) => (i.id > 0 && i.id < 5)).map((i, index) => (
-                <div key={i.id}>
-                    <img width="200px" height="250px" src={i.image && i.image} alt="" />
-                    <div>{i.title}</div>
-                </div>
-            )): <div>
-                <Loading />해당 도서를 불러오는 중입니다.
-            </div>}
-        </Col>
 
-        <Col xs={3}>
+            <Row>
+
             <div style={{
-                 fontFamily: 'Playfair Display SC',
-                    marginTop: "50px",
-                    fontSize: "2em",
-                    fontWeight: "bold"
+                fontFamily: 'Playfair Display SC',
+                marginTop: "50px",
+                fontSize: "2em",
+                fontWeight: "bold"
             }}>
                 <p>New books</p>
                 <p style={{fontSize : "0.8em"}}>by BUSAN library</p>
             </div>
-            <p>실시간으로 부산시 내 도서관 <br/> 신간도서 입고현황에 대해 안내합니다.</p> 
-        </Col>
+            <p>실시간으로 부산시 내 도서관 신간도서 입고현황에 대해 안내합니다.</p> 
+            </Row>
+            <Row>
+
+                <Col>
+                {bookInfo ?
+                bookInfo.map((i, index) => (
+                    <span key={i.id} style={{display: "flex"}}>
+                    <img style={{width : "16em", height : "20em", display : "inline-block", margin: "1em"}} src={i.image && i.image} alt="" />
+                    <div>{i.title}</div>
+                </span>
+            )): <div>
+                <Loading /> 해당 도서를 불러오는 중입니다.
+            </div>}
+            </Col>
+            </Row>
         </Row>
     );
 }

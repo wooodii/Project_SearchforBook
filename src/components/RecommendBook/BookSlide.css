@@ -10,3 +10,7 @@
 .bookrank::after{
     border-width:15px 10px; left:50%; margin-left:-10px;
 }
+
+.slick-slider .slick-initialized{
+    height : "0"
+}

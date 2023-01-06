@@ -21,7 +21,6 @@ h4{
 }
 
 .Cityofreadbox{
-    border : 2px solid black;
     padding: 10vh;
 }
 
@@ -31,7 +30,6 @@ h4{
 
 .onebookone{
     height : 14rem;
-    background-color: lightgray;
 }
 
 .booknanum{

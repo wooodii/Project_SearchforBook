@@ -17,7 +17,7 @@ const Menubar = () => {
       {id : 6, title : "북카페", icon : <FcGallery/> },
       {id : 7, title : "출판사", icon : <FcFilmReel/> },
       {id : 8, title : "도서문화행사", icon : <FcButtingIn/> },
-      {id : 9, title : "작가인터뷰", icon : <FcConferenceCall/> },
+      {id : 9, title : "마이페이지", icon : <FcConferenceCall/> },
     ]
 
     const [boardlist, setBoardList] = useState(MenuBar);
@@ -37,7 +37,7 @@ const Menubar = () => {
             <NavLink className="menu_btn0" key={menu.id} to={`/Recommendbook/${menu.id}`}>
             <button className ="menu_btn1">
             <div className="menubar_btn2"
-                style={{backgroundColor :"#eee", width : "80px", 
+                style={{width : "80px", 
                   height : "80px", borderRadius : "40px"}}>
                     <IconContext.Provider value={{ size :"3em", className : "iconsetting"}}>
                     {menu.icon}

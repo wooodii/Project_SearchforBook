@@ -136,7 +136,7 @@ const MbtiBook = () => {
     <div style={{marginTop : "5em"}}>
 
     <div>
-      <h2>MBTI Picks</h2>
+      <h2 style={{fontSize : "3em"}}>MBTI Picks</h2>
       <p>자신에게 해당하는 MBTI별 책을 찾아보세요!</p>
     </div>
       
@@ -153,7 +153,7 @@ const MbtiBook = () => {
              
             <div class="back">
               <Row>
-                <img style={{ width: "160px", height: "180px"}} src={require(`../../asset/mbti/${item.img}`) }></img>
+                <img style={{ width: "180px", height: "180px"}} src={require(`../../asset/mbti/${item.img}`) }></img>
               </Row>
                 <Row>
                   <div>

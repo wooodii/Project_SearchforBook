@@ -562,12 +562,12 @@ $(document).ready(function(){
 		}
 	});
 
-	$('#map0001, #map0002, #map0021, #map0022, #map0031, #map0032, #map0041, #map0042, #map0051, #map0052, #map0061, #map0062, #map0071, #map0072, #map0081, #map0082, #map0091, #map0092, #map0101, #map0102, #map0111, #map0112, #map0121, #map0122, #map0131, #map0132, #map0141, #map0142, #map0151, #map0152, #map0161, #map0162').change(function(){
-		lib = $(this).val();
-		$('.lib-info').hide();
-		if (lib != '') {
-			$('.map_'+lib + ' div.info').load('holidays.do?manage_code='+lib);
-		}
-		$('.map_'+lib).show();
-	});
+	// $('#map0001, #map0002, #map0021, #map0022, #map0031, #map0032, #map0041, #map0042, #map0051, #map0052, #map0061, #map0062, #map0071, #map0072, #map0081, #map0082, #map0091, #map0092, #map0101, #map0102, #map0111, #map0112, #map0121, #map0122, #map0131, #map0132, #map0141, #map0142, #map0151, #map0152, #map0161, #map0162').change(function(){
+	// 	lib = $(this).val();
+	// 	$('.lib-info').hide();
+	// 	if (lib != '') {
+	// 		$('.map_'+lib + ' div.info').load('holidays.do?manage_code='+lib);
+	// 	}
+	// 	$('.map_'+lib).show();
+	// });
 });

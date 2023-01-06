@@ -21,7 +21,7 @@ import SearchTitle from './components/BookSearch/SearchTitle';
 import SearchLib from './components/BookSearch/SearchLib';
 import SearchAuthor from './components/BookSearch/SearchAuthor';
 import Menubar from './components/Menubar/Menubar';
-import HomePage from './page/HomePage';
+import MainPage from './page/MainPage';
 
 function App() {
   return (
@@ -30,8 +30,8 @@ function App() {
       <NavComp/>     
           <Routes>
                 <Route path='/' element = {<Layout />}>
-                  <Route path='/Home' element = {<HomePage />}/>
-                  <Route exact path='/' element = {<HomePage />}/>
+                  <Route path='/Home' element = {<MainPage />}/>
+                  <Route exact path='/' element = {<MainPage />}/>
 
                   <Route path='/RecommendBook' element = {<RecommendBook />}>
                    <Route path='/RecommendBook' element = {<Menubar/>}>

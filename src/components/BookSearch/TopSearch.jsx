@@ -26,45 +26,40 @@ const TopSearch = () => {
   }, [search]);
 
   return (
-    <>
+    <div>
     <Row>
-        <p style={{marginLeft :"-20em"}}>
-    인기검색어
-        </p>
-    </Row>
-    <Row>
-{search ? (
-        search
-          .filter((s, index) => index >= 5 && index < 10)
-          .map((s, index) => (
-            <TopSearchPrint
+    {search ? (
+      search
+      .filter((s, index) => index >= 5 && index < 10)
+      .map((s, index) => (
+        <TopSearchPrint
               key={index}
               rank={s.rank}
               search_word={s.search_word}
-            />
-          ))
-          .reverse()
-      ) : (
-        <Loading />
-      )}
+              />
+              ))
+              .reverse()
+              ) : (
+                <Loading />
+                )}
     </Row>
     <Row>
         {search ? (
-        search
+          search
           .filter((s, index) => index >= 0 && index < 5)
           .map((s, index) => (
             <TopSearchPrint
-              key={index}
-              rank={s.rank}
-              search_word={s.search_word}
+            key={index}
+            rank={s.rank}
+            search_word={s.search_word}
             />
-          ))
-          .reverse()
-      ) : (
-        <Loading />
-      )}
+            ))
+            .reverse()
+            ) : (
+              <Loading />
+              )}
     </Row>      
-    </>
+    </div>
   );
 };
 

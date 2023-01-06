@@ -23,6 +23,7 @@ import TopSearch from './TopSearch';
         const [searchArray, setSearchArray] = useState("");
         const [input, setInput]= useState();
         const navigate = useNavigate();
+        
         useEffect(()=>{
             const newArray = BookInfo.filter((val)=>{
                 if(searchFinish == "") {
@@ -67,7 +68,7 @@ import TopSearch from './TopSearch';
                             }))
         
         return(  
-            <Container style={{marginTop : "5vh"}}>
+            <div style={{margin : "5vh 5em 0 5em"}}>
                 <Row>
                     <Col xs={5}>
                     <h3 className = 'ResultTitle'> Search List </h3> 
@@ -78,7 +79,7 @@ import TopSearch from './TopSearch';
                          (
                             <TopSearch/>
                          ) : (<div>
-                            <h4 style={{marginTop : "2em"}}> "{input}" 로 검색한 결과입니다. </h4>
+                            <h4 style={{marginTop : "5em"}}> "{input}" 로 검색한 결과입니다. </h4>
                             <p> 총 {searchArray.length} 개의 도서목록이 존재합니다.</p>
                         </div>) 
                         }
@@ -126,7 +127,7 @@ import TopSearch from './TopSearch';
                         page={page}
                         setPage={setPage}/>
                 </Row>
-            </Container>
+            </div>
         );
     }
 

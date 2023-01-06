@@ -26,33 +26,33 @@ const BookList = [
 ]
 
     return (
-   <Row style={{marginTop : "4em"}} fluid className= 'RecommendContainer'><hr/>
-        <Col xs={3}>
-            <h1 className='text-dark newBook'> Weekly <br/> Bestseller </h1>
-            <p> 이번 주 가장 많이 대출된 도서입니다</p>
-        </Col>
-        <Col xs={9}>
-          <Slider {...settings} style={{marginLeft :"2em"}}>
+      <>
+      <p style={{fontSize : "3em"}}> Weekly Bestseller </p>
+      <p> 이번 주 가장 많이 대출된 도서입니다</p>
+
+   <Row fluid >
+          <Slider className="slick-slider slick-initialized" {...settings} style={{margin :"0 4em"}}>
               {BookList.map((book, index) => (
                 <div className='slideImg' key={index}>
                   <Row>
                     <div style={{position : "relative"}}>
                       <span className='bookrank' style={{position: "absolute", left : "1.2em", backgroundColor : "red", color : "white", 
                             padding : "0.4em 0.6em", borderBottomLeftRadius : "5px", borderBottomRightRadius : "5px", zIndex : "999", fontWeight : "500"}}> {book.id} </span>
-                      <img style={{width : "80%", height : "100%", objectFit: "fill"}} src={require(`../../asset/weeklybest/${book.bookImg}`) }></img>
+                      <img style={{width : "14em", height : "20em", objectFit: "fill"}} src={require(`../../asset/weeklybest/${book.bookImg}`) }></img>
                     </div>
                   </Row>
                   <Row> 
-                    <div style={{marginTop : "0.7em", display : "flex", fontWeight : "bold", fontSize : "0.9em"}}> {book.title} </div><br/>
-                    <div style={{display : "flex", fontSize : "0.7em"}}>{book.author}</div>
+                    <div style={{marginTop : "0.7em", display : "flex", fontWeight : "bold", fontSize : "1.2em"}}> {book.title} </div><br/>
+                    <div style={{display : "flex", fontSize : "1em"}}>{book.author}</div>
                   </Row>
                 </div>
               ))}
           </Slider>
-      </Col>
     </Row>
+</>
 
     );
 }
+
 
 export default BookSlide;

@@ -5,16 +5,15 @@ import BookSearchPage from "./BookSearchPage";
 import RecommendBookPage from "./RecommendBookPage";
 import LibraryInfoPage from "./LibraryInfoPage";
 import BookStorePage from "./BookStorePage";
-import HomePage from "./HomePage";
 import BookCafePage from "./BookCafePage";
 import BookPublishPage from "./BookPublishPage";
-import AuthorPage from "./AuthorPage";
+import MyPage from '../page/MyPage';
 
 const RecommendBookPrint = () => {
     const {id} = useParams();
 
     const [pages, setPages] = useState([
-      {id : 1 , category : <HomePage/>},  
+      {id : 1 , category : "ddd"},  
       {id : 2 , category : <RecommendBookPage/>},  
       {id : 3 , category : <BookSearchPage/>},  
       {id : 4 , category : <LibraryInfoPage/>},  
@@ -22,7 +21,7 @@ const RecommendBookPrint = () => {
       {id : 6 , category : <BookCafePage/>},  
       {id : 7 , category : <BookPublishPage/>},  
       {id : 8 , category : <BookCulturePage/>},  
-      {id : 9 , category : <AuthorPage/>},  
+      {id : 9 , category : <MyPage/>},  
     ])
 
     const page = pages.find((pages) => (pages.id == Number(id)));
