@@ -10,10 +10,10 @@
 
     img{
         position : fixed; 
-        left : 45vw;
-        top : 30vh;
+        left : 40vw;
+        top : 40vh;
         width : auto;
-        height : clamp(200px, 20vw, 20vw);
+        height : clamp(200px, 10vw, 10vw);
         object-fit: cover;
         pointer-events : none; 
         // 적용x ㅠ
@@ -21,7 +21,7 @@
     }
 
     .menu-title {
-    font-size : 5vw;
+    font-size : 3vw;
     z-index: 1;
     line-height: 1.1;
     margin : 1em 0;

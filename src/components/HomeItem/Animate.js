@@ -1,8 +1,15 @@
 
-function getValue (fromValue, toValue, elapsed, duration, easeMethod) {
-    // if(elapsed > duration) return end;
-    // 9 : 46 part4
-    // return start + (end - start) & 
+const easing = {
+    // need other function : tube 9 : 45 
+    easeOutQuad : t => t*(2-t),
+    easeInOutCubic : (t) => 
+    t < 0.5 ? 4 * t * t * t : (t-1) * (2 * t -2) * (2 * t -2) + 1
+}
+
+
+function getValue (start, end , elapsed, duration, easeMethod) {
+    if(elapsed > duration) return end;
+    return start + (end - start) * easing[easeMethod](elapsed / duration ); 
 }
 
 const Animate = ({
