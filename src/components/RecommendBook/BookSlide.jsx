@@ -7,7 +7,7 @@ const BookSlide = () => {
         dots: false,
         infinite: true,
         speed: 1500,
-        slidesToShow: 5,
+        slidesToShow: 7,
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 1000,
@@ -23,12 +23,16 @@ const BookList = [
   {id : 5, title : "불편한 편의점 ", author : "김호연", bookImg : "uncomfortableStore.jpg"}, 
   {id : 6, title : "파친코1", author : "이민진", bookImg : "pachinko1.jpg"}, 
   {id : 7, title : "명량한 은둔자", author : "캐럴라인 냅", bookImg : "cheerfulHermit.jpg"}, 
+  {id : 8, title : "트렌트 코리아 2023", author : " 김난도 외 9명", bookImg : "trendKorea2023.jpg"}, 
+  {id : 9, title : "불편한 편의점 ", author : "김호연", bookImg : "uncomfortableStore.jpg"}, 
+  {id : 10, title : "파친코1", author : "이민진", bookImg : "pachinko1.jpg"}, 
+  {id : 11, title : "명량한 은둔자", author : "캐럴라인 냅", bookImg : "cheerfulHermit.jpg"}, 
 ]
 
     return (
       <>
-      <p style={{fontSize : "3em"}}> Weekly Bestseller </p>
-      <p> 이번 주 가장 많이 대출된 도서입니다</p>
+      <p style={{fontSize : "3em", fontWeight : "bold"}}> 이 주의 책</p>
+      <p style={{fontSize : "1.5em"}}> 이번 주 가장 많이 대출된 도서입니다</p>
 
    <Row fluid >
           <Slider className="slick-slider slick-initialized" {...settings} style={{margin :"0 4em"}}>

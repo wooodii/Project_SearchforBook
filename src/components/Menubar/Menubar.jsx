@@ -26,7 +26,7 @@ const Menubar = () => {
         dots: false,
         infinite: true,
         speed: 500,
-        slidesToShow: 8,
+        slidesToShow: 9,
         slidesToScroll: 1
       };
 
@@ -38,7 +38,7 @@ const Menubar = () => {
             <button className ="menu_btn1">
             <div className="menubar_btn2"
                 style={{width : "80px", 
-                  height : "80px", borderRadius : "40px"}}>
+                  height : "80px", borderRadius : "40px", backgroundColor : "#eee", margin : "2em"}}>
                     <IconContext.Provider value={{ size :"3em", className : "iconsetting"}}>
                     {menu.icon}
                     </IconContext.Provider>

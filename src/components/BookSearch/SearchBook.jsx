@@ -68,16 +68,20 @@ import TopSearch from './TopSearch';
                             }))
         
         return(  
-            <div style={{margin : "5vh 5em 0 5em"}}>
+            <div style={{margin : "0 10em 0 10em"}}>
                 <Row>
-                    <Col xs={5}>
-                    <h3 className = 'ResultTitle'> Search List </h3> 
+                    <Col xs={5}  style={{marginTop : "7em"}}>
+                    <h3 style={{fontSize : "3em"}}> 도서통합검색</h3> 
                     </Col>
-                    <Col xs={7}>
+                    <Col xs={7} style={{marginTop : "5em"}}>
                         { 
                            searchFinish == "" ?
                          (
+                            <div>
+                            <p style={{fontSize : "1.3em",fontWeight : "bold"}}>실시간 인기검색어</p>
                             <TopSearch/>
+                            </div>
+
                          ) : (<div>
                             <h4 style={{marginTop : "5em"}}> "{input}" 로 검색한 결과입니다. </h4>
                             <p> 총 {searchArray.length} 개의 도서목록이 존재합니다.</p>

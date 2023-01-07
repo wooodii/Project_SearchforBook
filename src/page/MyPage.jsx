@@ -2,7 +2,6 @@ import { Button, Col, Container, Row } from "react-bootstrap";
 import '../components/MyPage/MyPage.css';
 import DataContext from "../context/DataContext";
 import { useContext, useEffect, useState } from "react";
-import TodoComp from "../components/TodoComp";
 import Profile from "./Profile";
 import ReviewModal from "../components/MyPage/ReviewModal";
 
@@ -11,7 +10,6 @@ const MyPage = () => {
     const {state} = useContext(DataContext);
     const day = new Date();
     
-    // filter ?
     const data = useContext(DataContext);
     const [comments, setComments] = useState();
 
@@ -24,8 +22,8 @@ const MyPage = () => {
     const [modalShow, setModalShow] = useState(false);
 
     return ( 
-        <div className="BOX">
-            <Container style={{marginTop : "10vh"}}> 
+        <div className="BOX" style={{margin : "0 4em"}}>
+            <div style={{marginTop : "10vh"}}> 
                 <Row>
                     <Col className="titleBox">
                         <h1 className='mypage'> Mypage </h1>
@@ -47,18 +45,22 @@ const MyPage = () => {
                 </Row>
                 <Row style={{margin : "8vh 0 8vh 0"}}>
                     <Col >
-
+                        <p style={{fontSize : "2em"}}> 도서검색내역 </p>
                         <div style={{overflow : "scroll"}} className="reservationbox">
-                            <p className="searchbooktitle"> a searching book </p>
                                 <div >
                                     <Row>
-                                        <div style={{border : "2px solid black"}}>
+                                        <div>
                                             {data.state.myLib ? <div className="bookAddList1">
-                                            {data.state.myLib.map((lib) => [lib.도서관명] )}</div> : <div>등록없음</div>} 
-                                            {data.state.myLib ? <div className="bookAddList1">
-                                            {data.state.myLib.map((lib) => [lib.서명] )}</div> : <div>등록없음</div>} 
-                                            {data.state.myLib ? <div className="bookAddList1">
-                                            {data.state.myLib.map((lib) => [lib.저자] )}</div> : <div>등록없음</div>} 
+                                            {data.state.myLib.map(
+                                                (lib) => [ 
+                                                    <div style={{border : "2px solid black", borderRadius :"20px", margin : "0.5em"}}>
+                                                    <div style={{margin : "1em"}}>
+                                                        <Row> 도서관명 | {lib.도서관명} </Row>
+                                                        <Row>도서제목 |  {lib.서명} </Row>
+                                                        <Row> 저자 |  {lib.저자} </Row>
+                                                    </div>
+                                                    </div>
+                                                    ] )}</div> : <div>등록없음</div>} 
                                         </div>
                                     </Row>
                                 </div>
@@ -66,27 +68,42 @@ const MyPage = () => {
                     
                     </Col>
                     <Col>
+                            <p style={{fontSize : "1.9em"}}> 도서대출현황 </p>
                         <div className="borrowbox">
-                            <p className="borrowedbooktitle">a borrowed book </p>
-                            <div>
-                            <TodoComp/>
-                            </div>
+
+                            <Row style={{border : "2px solid black", borderRadius : "10px", margin : "2em"}}>
+                                <div style={{margin : "1em"}}>
+                                <Row>
+                                    대출일자 | 2023. 1. 06
+                                </Row>
+                                <Row>
+                                    도서번호 | 023013761853
+                                </Row>
+                                <Row>
+                                    반납일자 | 2023. 1. 14 
+                                </Row>
+                                <Row>
+                                    도서제목 | 소크라테스익스프레스
+                                </Row>
+                                </div>
+                            </Row>
+
                         </div> 
                     
                     </Col>
                     <Col>
-                        <div className="libraryPickbox">
-                            <p className="librarypick"> regular library</p>
+                        <p  style={{fontSize : "1.5em"}}> 단골도서관 등록</p>
+                        <div style={{overflow : "scroll"}} className="libraryPickbox">
                             <Row>
                                 {/** [book.도서관명] 배열로 여러개 넣는 경우 사용 */}
                                 {data.state.myBook ? 
                                 (<div style={{fontSize : "1.5em"}}>
-                                    {data.state.myBook.map((book)=>[book.도서관명])}
-                                </div>) : <div>등록없음 </div>}
-
-                                {data.state.myBook ? 
-                                (<div>
-                                    {data.state.myBook.map((book)=>( book.홈페이지주소))}
+                                    {data.state.myBook.map((book)=>[
+                                        <div style={{border : "2px solid black", borderRadius : "10px", margin : "1em"}}>
+                                        <div>{book.도서관명} </div>
+                                        <div>{book.홈페이지주소} </div> 
+                                        </div>
+                                        ])}
                                 </div>) : <div>등록없음 </div>}
                             </Row>
                             <div></div>
@@ -94,16 +111,16 @@ const MyPage = () => {
                     </Col>
                     <Row>
                         <Col>
+                            <p  style={{fontSize : "2em"}}> 추천도서 </p> 
                         <div className="mbtibox">
-                            <p className="mypagembti"> book of your choice </p> 
                             <div className="mapagembtipage">
                                 
                             </div>
                         </div>
                         </Col>
                         <Col>
+                            <p style={{fontSize : "2em"}} > 도서후기작성</p>
                         <div className="bookcommentbox">
-                            <p className="bookcomment" > book review</p>
                             <>
                                 <div>{} 권의 리뷰를 작성하셨습니다. </div>
                                 <div>{} 님은 대체로 {} 분야의 책을 주로 읽어요! </div>
@@ -123,7 +140,7 @@ const MyPage = () => {
                         </Col>
                     </Row>
                 </Row>
-            </Container>
+            </div>
         </div>
     );
 }

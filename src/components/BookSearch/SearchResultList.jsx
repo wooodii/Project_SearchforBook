@@ -26,8 +26,6 @@ const SearchResultList = ({도서관명, 자료실, 서명, 저자, 출판사}) 
                         <Col  xs={1}>{출판사 && 출판사}</Col>  
                         <Col  xs={2}>
                         {<button onClick={likebook} type="checkbox"> <FcLikePlaceholder style={{fontSize :"1.5em"}}/> </button> }
-                        
-                        {<button onClick={likebook} type="checkbox"> <FcEditImage style={{fontSize :"1.5em"}}/> </button> }
                         </Col>
                     </Row>
              <hr />   

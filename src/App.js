@@ -7,7 +7,6 @@ import "slick-carousel/slick/slick-theme.css";
 // library
 // switch == Routes
 import {Route, Routes} from 'react-router-dom';
-import NavComp from './components/NavComp'
 import Layout from './page/Layout';
 import RecommendBook from './page/RecommendBook';
 import Login from './page/Login';
@@ -22,12 +21,13 @@ import SearchLib from './components/BookSearch/SearchLib';
 import SearchAuthor from './components/BookSearch/SearchAuthor';
 import Menubar from './components/Menubar/Menubar';
 import MainPage from './page/MainPage';
+import FooterComp from './components/FooterComp';
+import NavComp from './components/NavComp';
 
 function App() {
   return (
     <div className="App">
       <DataProvider >
-      <NavComp/>     
           <Routes>
                 <Route path='/' element = {<Layout />}>
                   <Route path='/Home' element = {<MainPage />}/>
@@ -51,6 +51,7 @@ function App() {
                   <Route path='/Searchlib' element= {<SearchLib/>} />
                 </Route> 
           </Routes>
+          <FooterComp/>
       </DataProvider>
     </div>
   );

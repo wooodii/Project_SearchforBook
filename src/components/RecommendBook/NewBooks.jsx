@@ -25,25 +25,23 @@ const NewBooks = () => {
 
     return ( 
         <Row>
-
             <Row>
-
             <div style={{
                 fontFamily: 'Playfair Display SC',
                 marginTop: "50px",
                 fontSize: "2em",
                 fontWeight: "bold"
             }}>
-                <p>New books</p>
-                <p style={{fontSize : "0.8em"}}>by BUSAN library</p>
-            </div>
-            <p>실시간으로 부산시 내 도서관 신간도서 입고현황에 대해 안내합니다.</p> 
-            </Row>
-            <Row>
 
+            </div>
+            </Row>
+                <p style={{fontSize : "3em", fontWeight : "bold"}}> 신간도서</p>
+                <p style={{fontSize : "1.5em"}}> 부산 내 도서관에 입고된 책입니다</p>
+            <Row style={{margin : "0 4em"}}>
                 <Col>
+                <div >
                 {bookInfo ?
-                bookInfo.map((i, index) => (
+                bookInfo.filter((i, index ) => (index == 4)).map((i, index) => (
                     <span key={i.id} style={{display: "flex"}}>
                     <img style={{width : "16em", height : "20em", display : "inline-block", margin: "1em"}} src={i.image && i.image} alt="" />
                     <div>{i.title}</div>
@@ -51,6 +49,72 @@ const NewBooks = () => {
             )): <div>
                 <Loading /> 해당 도서를 불러오는 중입니다.
             </div>}
+                </div>
+            </Col>
+            <Col>
+                <div>
+                {bookInfo ?
+                bookInfo.filter((i, index ) => (index == 5)).map((i, index) => (
+                    <span key={i.id} style={{display: "flex"}}>
+                    <img style={{width : "16em", height : "20em", display : "inline-block", margin: "1em"}} src={i.image && i.image} alt="" />
+                    <div>{i.title}</div>
+                </span>
+            )): <div>
+                <Loading /> 해당 도서를 불러오는 중입니다.
+            </div>}
+                </div>
+            </Col>
+            <Col>
+                <div>
+                {bookInfo ?
+                bookInfo.filter((i, index ) => (index == 6)).map((i, index) => (
+                    <span key={i.id} style={{display: "flex"}}>
+                    <img style={{width : "16em", height : "20em", display : "inline-block", margin: "1em"}} src={i.image && i.image} alt="" />
+                    <div>{i.title}</div>
+                </span>
+            )): <div>
+                <Loading /> 해당 도서를 불러오는 중입니다.
+            </div>}
+                </div>
+            </Col>
+            <Col>
+                <div>
+                {bookInfo ?
+                bookInfo.filter((i, index ) => (index == 7)).map((i, index) => (
+                    <span key={i.id} style={{display: "flex"}}>
+                    <img style={{width : "16em", height : "20em", display : "inline-block", margin: "1em"}} src={i.image && i.image} alt="" />
+                    <div>{i.title}</div>
+                </span>
+            )): <div>
+                <Loading /> 해당 도서를 불러오는 중입니다.
+            </div>}
+                </div>
+            </Col>
+            <Col>
+                <div>
+                {bookInfo ?
+                bookInfo.filter((i, index ) => (index == 8)).map((i, index) => (
+                    <span key={i.id} style={{display: "flex"}}>
+                    <img style={{width : "16em", height : "20em", display : "inline-block", margin: "1em"}} src={i.image && i.image} alt="" />
+                    <div>{i.title}</div>
+                </span>
+            )): <div>
+                <Loading /> 해당 도서를 불러오는 중입니다.
+            </div>}
+                </div>
+            </Col>
+            <Col>
+                <div>
+                {bookInfo ?
+                bookInfo.filter((i, index ) => (index == 9)).map((i, index) => (
+                    <span key={i.id} style={{display: "flex"}}>
+                    <img style={{width : "16em", height : "20em", display : "inline-block", margin: "1em"}} src={i.image && i.image} alt="" />
+                    <div>{i.title}</div>
+                </span>
+            )): <div>
+                <Loading /> 해당 도서를 불러오는 중입니다.
+            </div>}
+                </div>
             </Col>
             </Row>
         </Row>

@@ -5,7 +5,6 @@ import BookSearchPage from "./BookSearchPage";
 import RecommendBookPage from "./RecommendBookPage";
 import LibraryInfoPage from "./LibraryInfoPage";
 import BookStorePage from "./BookStorePage";
-import BookCafePage from "./BookCafePage";
 import BookPublishPage from "./BookPublishPage";
 import MyPage from '../page/MyPage';
 
@@ -18,10 +17,9 @@ const RecommendBookPrint = () => {
       {id : 3 , category : <BookSearchPage/>},  
       {id : 4 , category : <LibraryInfoPage/>},  
       {id : 5 , category : <BookStorePage/>},  
-      {id : 6 , category : <BookCafePage/>},  
-      {id : 7 , category : <BookPublishPage/>},  
-      {id : 8 , category : <BookCulturePage/>},  
-      {id : 9 , category : <MyPage/>},  
+      {id : 6 , category : <BookPublishPage/>},  
+      {id : 7 , category : <BookCulturePage/>},  
+      {id : 8 , category : <MyPage/>},  
     ])
 
     const page = pages.find((pages) => (pages.id == Number(id)));

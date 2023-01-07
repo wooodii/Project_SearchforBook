@@ -5,11 +5,12 @@ import './BookStorePage.scss';
 const BookStorePage = () => {
     return (
         <>
-        {/* <video width="100%" height="100%" controls autoPlay>
-            <source src={mixtape2} type="video/mp4"/> 해당 브라우저는 동영상 제공을 지원하지 않습니다.</video> */}
 
-        부산 서점 <br/>
-        우리 지역의 크고 다양한 서점들을 소개합니다.
+        <h2 style={{fontSize : "3em", fontWeight : "bold"}}> 부산 서점</h2>
+        <p style={{fontSize : "1.3em"}}>   우리 지역의 크고 다양한 서점들을 소개합니다.</p>
+        
+        <hr />
+        
         <BookStore/>
 
         </>
