@@ -12,14 +12,13 @@ const RecommendBookPrint = () => {
     const {id} = useParams();
 
     const [pages, setPages] = useState([
-      {id : 1 , category : "ddd"},  
+      {id : 1 , category : "전체보기 메뉴 편집중"},  
       {id : 2 , category : <RecommendBookPage/>},  
       {id : 3 , category : <BookSearchPage/>},  
       {id : 4 , category : <LibraryInfoPage/>},  
       {id : 5 , category : <BookStorePage/>},  
       {id : 6 , category : <BookPublishPage/>},  
       {id : 7 , category : <BookCulturePage/>},  
-      {id : 8 , category : <MyPage/>},  
     ])
 
     const page = pages.find((pages) => (pages.id == Number(id)));

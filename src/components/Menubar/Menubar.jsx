@@ -13,11 +13,9 @@ const Menubar = () => {
       {id : 2, title : "도서추천", icon : <FcTwoSmartphones/>},
       {id : 3, title : "도서검색", icon : <FcFilledFilter/>  },
       {id : 4, title : "도서관검색", icon :  <FcEmptyFilter/>},
-      {id : 5, title : "서점", icon : <FcPackage/> },
-      {id : 6, title : "북카페", icon : <FcGallery/> },
-      {id : 7, title : "출판사", icon : <FcFilmReel/> },
-      {id : 8, title : "도서문화행사", icon : <FcButtingIn/> },
-      {id : 9, title : "마이페이지", icon : <FcConferenceCall/> },
+      {id : 5, title : "서점/북카페", icon : <FcPackage/> },
+      {id : 6, title : "출판사", icon : <FcGallery/> },
+      {id : 7, title : "책읽는도시부산", icon : <FcGallery/> },
     ]
 
     const [boardlist, setBoardList] = useState(MenuBar);
@@ -26,7 +24,7 @@ const Menubar = () => {
         dots: false,
         infinite: true,
         speed: 500,
-        slidesToShow: 9,
+        slidesToShow: 6,
         slidesToScroll: 1
       };
 

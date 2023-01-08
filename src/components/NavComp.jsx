@@ -38,7 +38,7 @@ function NavComp() {
     <>
      <nav style={{padding : "2em 0", fontSize : "1.2em", position : "abosulte", top : 0}} className="navbar">
                 <div>
-                    <button style={{marginRight : "1.5em", fontSize : "1.2em", fontWeight : "bold"}}>Search for Books</button>
+                    <button style={{marginLeft : "1.5em", marginRight : "1.5em", fontSize : "1.2em", fontWeight : "bold"}}>Search for Books</button>
                 </div>
                 
                 <div>
@@ -48,7 +48,7 @@ function NavComp() {
                     <button style={{marginRight : "1.5em",  fontSize : "1.2em"}} onClick={() => (navigate('/LibInfo'))} > 도서관정보 </button>
                 </div>
 
-                <div>
+                <div style={{marginRight : "1.5em",}}>
                 {login ? (
                 <div>
                   <button style={{all : "unset"}} onClick={() => (navigate('/mypage'))}> <CgUser/> {data.state.user.name}님의 마이페이지　</button> 

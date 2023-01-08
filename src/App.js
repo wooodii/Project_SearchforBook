@@ -41,8 +41,6 @@ function App() {
                   
                   <Route path='/SearchBook' element = {<SearchBook />}></Route>
                   <Route path='/LibInfo' element = {<LibraryInfoPage />}/> 
-
-
                   <Route path='/loginform' element = {<Login />}/>
                   <Route path='/mypage' element = {<MyPage />} />
                   <Route path = "*" element={<PageNotFound />} />

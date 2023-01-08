@@ -3,6 +3,7 @@ import MbtiBook from "../components/RecommendBook/MbtiBook";
 import NewBooks from "../components/RecommendBook/NewBooks";
 import BookSlide from '../components/RecommendBook/BookSlide';
 import mainpage from '../video/mainpage.mp4';
+
 // import mixtape1 from '../video/mixtape1.mp4';
 
 const RecommendBookPage = () => {
