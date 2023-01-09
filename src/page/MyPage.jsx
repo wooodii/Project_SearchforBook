@@ -2,15 +2,17 @@ import { Button, Col, Container, Row } from "react-bootstrap";
 import '../components/MyPage/MyPage.css';
 import DataContext from "../context/DataContext";
 import { useContext, useEffect, useState } from "react";
-import Profile from "./Profile";
+import Profile from "../components/MyPage/Profile";
 import ReviewModal from "../components/MyPage/ReviewModal";
-
+import NavComp from '../components/Menubar/NavComp';
 
 const MyPage = () => {
     const {state} = useContext(DataContext);
     const day = new Date();
     
     const data = useContext(DataContext);
+    const [login, setLogin] = useState();
+
     const [comments, setComments] = useState();
 
     useEffect(() => { 
@@ -22,7 +24,8 @@ const MyPage = () => {
     const [modalShow, setModalShow] = useState(false);
 
     return ( 
-        <div className="BOX" style={{margin : "0 4em"}}>
+        <div className="BOX" style={{margin : "0 8em"}}>
+            <NavComp/>
             <div style={{marginTop : "10vh"}}> 
                 <Row>
                     <Col className="titleBox">
@@ -45,8 +48,8 @@ const MyPage = () => {
                 </Row>
                 <Row style={{margin : "8vh 0 8vh 0"}}>
                     <Col >
-                        <p style={{fontSize : "2em"}}> 도서검색내역 </p>
-                        <div style={{overflow : "scroll"}} className="reservationbox">
+                        <p style={{fontSize : "1.5em", marginTop : "2em"}}> 도서검색내역 </p>
+                        <div style={{overflow : "scroll", marginTop : "-0.5em"}} className="reservationbox">
                                 <div >
                                     <Row>
                                         <div>
@@ -92,9 +95,10 @@ const MyPage = () => {
                     
                     </Col>
                     <Col>
-                        <p  style={{fontSize : "1.5em"}}> 단골도서관 등록</p>
-                        <div style={{overflow : "scroll"}} className="libraryPickbox">
-                            <Row>
+                        <p  style={{fontSize : "1.5em", marginTop : "2em"}}> 단골도서관 등록</p>
+                        <div style={{overflow : "scroll", marginTop : "-0.5em"}} className="reservationbox">
+                                <div >
+                                <Row>
                                 {/** [book.도서관명] 배열로 여러개 넣는 경우 사용 */}
                                 {data.state.myBook ? 
                                 (<div style={{fontSize : "1.5em"}}>
@@ -107,23 +111,33 @@ const MyPage = () => {
                                 </div>) : <div>등록없음 </div>}
                             </Row>
                             <div></div>
+                                </div>
                         </div>
                     </Col>
                     <Row>
                         <Col>
-                            <p  style={{fontSize : "2em"}}> 추천도서 </p> 
-                        <div className="mbtibox">
+                            <p  style={{fontSize : "2em", marginTop : "2em"}}> 추천도서 </p> 
+                        <div className="mbtibox" style={{marginTop :"2em"}}>
                             <div className="mapagembtipage">
                                 
                             </div>
                         </div>
                         </Col>
                         <Col>
-                            <p style={{fontSize : "2em"}} > 도서후기작성</p>
-                        <div className="bookcommentbox">
+                            <p style={{fontSize : "2em", marginTop : "2em"}} > 도서후기작성</p>
+                        <div className="bookcommentbox" style={{marginTop : "0.5em"}}>
                             <>
-                                <div>{} 권의 리뷰를 작성하셨습니다. </div>
-                                <div>{} 님은 대체로 {} 분야의 책을 주로 읽어요! </div>
+                                { login
+                                    ? 
+                                <div style={{marginTop : "2em", fontSize : "1.3em"}}>
+                                    <div>{} 권의 리뷰를 작성하셨습니다. </div>
+                                    <div>{} 님은 대체로 {} 분야의 책을 주로 읽어요! </div>
+                                </div>
+                                    : <div style={{marginTop : "2em", fontSize : "1.3em"}}>
+                                    로그인 후 후기를 작성해주세요
+                                </div>
+                                }
+
                                 <br/>
                                 
                             <Button 

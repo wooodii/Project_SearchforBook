@@ -1,8 +1,8 @@
 import { useContext } from "react";
 import { Col, Container, Row } from "react-bootstrap";
-import ProfileUpdate from "../components/ProfileUpdate";
-import DataContext from "../context/DataContext";
-import bear from '../asset/weeklybest/bear.png'
+import ProfileUpdate from "./ProfileUpdate";
+import DataContext from "../../context/DataContext";
+import bear from '../../asset/weeklybest/bear.png'
 const Profile = () => {
 	const {state} = useContext(DataContext);
   return (

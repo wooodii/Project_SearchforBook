@@ -3,7 +3,7 @@ import { useState } from "react";
 import { Button, Col, Container, Form, Row } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
 import DataContext from "../context/DataContext";
-import '../css/Login.css';
+import './Login.css';
 
 const Login = () => {
     const [name, setName] = useState("");

@@ -22,8 +22,6 @@ import SearchAuthor from './components/BookSearch/SearchAuthor';
 import Menubar from './components/Menubar/Menubar';
 import MainPage from './page/MainPage';
 import FooterComp from './components/FooterComp';
-import NavComp from './components/NavComp';
-
 function App() {
   return (
     <div className="App">

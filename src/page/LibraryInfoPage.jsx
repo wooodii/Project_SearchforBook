@@ -13,10 +13,12 @@ const LibraryInfoPage = () => {
     const [page, setPage] = useState(1);
     const offset = (page - 1)*limit;
 
-    return ( 
-        <div style={{margin : "0 10em"}} className="LibInfoBox">
+    return (    
+                    
+        <div style={{margin : "0 10em"}} className="LibInfoBox"> 
                 <Row style={{margin : "5vh", display :"flex", alignItem:"center", justifyContent:"center"}}>
-                    <h1 className="libTitle">도서관 안내</h1>
+                
+                    <h1 style={{fontSize : "3em", fontWeight : "bold"}} >도서관 안내</h1>
                     <p style={{fontSize : "1.5em"}}>찾으시는 지역을 선택하고, 해당 지역 내 도서관에 관한 정보를 제공받으세요</p>
                 </Row>
                 <Row>
@@ -29,10 +31,10 @@ const LibraryInfoPage = () => {
                     onChange = {e => {setSearchLib(e.target.value)}} />
                 </Row>
                 <Row>
-                    <Col xs={6}>
+                    <Col xs={5} style={{marginTop : "2em"}}>
                         <BusanMap style={{width : "100%"}}/>
                     </Col>
-                    <Col xs={6}>
+                    <Col xs={7}>
                     <div style={{ marginTop : "5vh"}} >
                         {LibraryList.filter((val) => {
                             if(searchLib == "" ){

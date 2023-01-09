@@ -1,21 +1,10 @@
-import Button from 'react-bootstrap/Button';
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
-import { ImHome3 } from "react-icons/im";
 import { CgUser } from "react-icons/cg";
 
-// fontawsome
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-import {faHouse, faMagnifyingGlass, faBook, faCircleInfo} from '@fortawesome/free-solid-svg-icons';
-
 // css
-import '../css/NavComp.css';
-import { NavLink } from 'react-bootstrap';
-import { Link, Navigate, useNavigate } from 'react-router-dom';
+import './NavComp.css';
+import { useNavigate } from 'react-router-dom';
 import { useContext, useState } from 'react';
-import DataContext from '../context/DataContext';
+import DataContext from '../../context/DataContext';
 import { useEffect} from 'react';
 
 function NavComp() {
@@ -43,9 +32,9 @@ function NavComp() {
                 
                 <div>
                     <button style={{marginRight : "1.5em", fontSize : "1.2em", }} onClick={() => (navigate('/Home'))}>  홈 </button>
-                    <button style={{marginRight : "1.5em",  fontSize : "1.2em"}} onClick={() => (navigate('/RecommendBook/1'))}> 도서추천</button>
-                    <button style={{marginRight : "1.5em",  fontSize : "1.2em"}} onClick={() => (navigate('/SearchBook'))}>  도서검색</button>
-                    <button style={{marginRight : "1.5em",  fontSize : "1.2em"}} onClick={() => (navigate('/LibInfo'))} > 도서관정보 </button>
+                    <button style={{marginRight : "1.5em",  fontSize : "1.2em"}} onClick={() => (navigate('/RecommendBook/2'))}> 도서추천</button>
+                    <button style={{marginRight : "1.5em",  fontSize : "1.2em"}} onClick={() => (navigate('/RecommendBook/3'))}>  도서검색</button>
+                    <button style={{marginRight : "1.5em",  fontSize : "1.2em"}} onClick={() => (navigate('/RecommendBook/4'))} > 도서관정보 </button>
                 </div>
 
                 <div style={{marginRight : "1.5em",}}>

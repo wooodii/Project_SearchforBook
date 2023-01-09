@@ -3,7 +3,7 @@ import { useContext } from 'react';
 import { Form } from 'react-bootstrap';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
-import DataContext from '../context/DataContext';
+import DataContext from '../../context/DataContext';
 
 function ProfileUpdate() {
   const [show, setShow] = useState(false);

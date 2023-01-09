@@ -1,15 +1,26 @@
 import bear from  '../asset/weeklybest/bear.png'
 import './BookPublishPage.scss';
+import walk from '../asset/storeimg/walk.png'; 
 
 const BookPublishPage = () => {
     return (
+    
         <>
+
+      <img width="100%" height="800px" src={walk} alt="" />
+
+        <div style={{marginTop : "4em"}}>
+          <h1 style={{fontWeight : "bold", fontSize : "3em"}}>부산 출판사</h1>
+          <p>우리 지역의 크고 다양한 서점을 소개합니다.</p>
+        </div>
+
+
         <div class="component">
-  <ul class="align">
-    {/* <!-- Book 1 -->*/}
-    <li>
+      <ul class="align">
+      {/* <!-- Book 1 -->*/}
+      <li>
       <figure class='book'>        
-    {/* <!-- front -->*/}     
+      {/* <!-- front -->*/}     
         <ul class='hardcover_front'>
           <li>
             <img src={bear} alt="" width="100%" height="100%"/>

@@ -1,7 +1,7 @@
 import { useContext, useState } from "react";
 import { Container } from "react-bootstrap";
 import { useParams } from "react-router-dom";
-import DataContext from "../context/DataContext";
+import DataContext from "../../context/DataContext";
 
 const CommentInput = () => {
   /** params는 동적으로 주소값을 지정해줘서 데이터 값과 연결해 화면에 불러옴 */

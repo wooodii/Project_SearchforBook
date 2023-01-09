@@ -1,7 +1,8 @@
-import '../css/RecommendBook.css';
+import './RecommendBook.css';
 import React from "react";
 import { Outlet } from 'react-router-dom';
-import NavComp from '../components/NavComp';
+import NavComp from '../components/Menubar/NavComp';
+
 
 function RecommendBook() {  
 

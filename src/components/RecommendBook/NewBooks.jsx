@@ -24,19 +24,20 @@ const NewBooks = () => {
     })
 
     return ( 
-        <Row>
+        <Row  style={{marginBottom : "5em"}}>
             <Row>
             <div style={{
                 fontFamily: 'Playfair Display SC',
                 marginTop: "50px",
                 fontSize: "2em",
                 fontWeight: "bold"
-            }}>
+            }}> </div></Row>
 
-            </div>
-            </Row>
+                <div style={{display : "flex"}}>
                 <p style={{fontSize : "3em", fontWeight : "bold"}}> 신간도서</p>
-                <p style={{fontSize : "1.5em"}}> 부산 내 도서관에 입고된 책입니다</p>
+                <p style={{fontSize : "1.5em", marginTop : "1em", marginLeft : "1em"}}> 부산 내 도서관에 입고된 책입니다</p>
+                </div>
+
             <Row style={{margin : "0 4em"}}>
                 <Col>
                 <div >

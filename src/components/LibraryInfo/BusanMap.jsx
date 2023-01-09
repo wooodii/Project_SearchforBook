@@ -1,4 +1,4 @@
-// import './css/BusanMap.css';
+import './BusanMap.css';
 
 // useRef 사용
 const BusanMap = () => {
@@ -91,11 +91,8 @@ const BusanMap = () => {
         <div class="main5">
         <div class="section">
 				<div class="innerLeft">
-					<div class="title">
-						<h3>
-							<b>도서관 안내</b> <br/>
+					<div style={{color : "white", postition : "absolute", marginTop : "2em"}}>
 							찾으시는 지역을 선택해주세요
-						</h3>
 					</div>
 					<div class="map web-view">
 						<span class="mp1"><a href="#mp1on" class="mp1on">기장군</a></span>

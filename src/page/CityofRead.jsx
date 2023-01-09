@@ -1,5 +1,5 @@
-import { Card, Col, Row } from "react-bootstrap";
-import '../css/CityofRead.css';
+import {Col, Row } from "react-bootstrap";
+import './CityofRead.css';
 import uncomfortableStore1 from '../asset/busanCamp/uncomfortableStore1.jpeg';
 
 const CityofRead = () => {   
@@ -15,7 +15,6 @@ const CityofRead = () => {
                     <div className="barrowbook"> 
                          <div className="cityBox" style={{position : "relative", zIndex : "20", display : "flex"}}> 
                         <h4 style={{position : "absolute", zIndex : "-100", top : "-1.5em"}}>지역서점바로대출</h4> 
-                        <img className="cityBoxImg" style={{position : "absolute", zIndex : "-100", top : "-3em", right : "0em",}} src={uncomfortableStore1} alt="" />
                         <div style={{width : "65%",textAlign : "left", position : "absolute", zIndex : "10", marginTop : "2em", display : "flex"}}>
                         읽고 싶은 책을 가까운 서점에서 빌리고,  읽은 후 도서관으로 반납하는 서비스입니다. 
                         신청한 도서는 반납 후 해당 공공도서관 도서로 소장됩니다.

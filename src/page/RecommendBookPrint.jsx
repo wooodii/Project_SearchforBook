@@ -7,18 +7,25 @@ import LibraryInfoPage from "./LibraryInfoPage";
 import BookStorePage from "./BookStorePage";
 import BookPublishPage from "./BookPublishPage";
 import MyPage from '../page/MyPage';
+import HomePage from '../page/HomePage'; 
 
 const RecommendBookPrint = () => {
     const {id} = useParams();
 
     const [pages, setPages] = useState([
-      {id : 1 , category : "전체보기 메뉴 편집중"},  
+      {id : 1 , category : <HomePage/>},  
       {id : 2 , category : <RecommendBookPage/>},  
       {id : 3 , category : <BookSearchPage/>},  
       {id : 4 , category : <LibraryInfoPage/>},  
       {id : 5 , category : <BookStorePage/>},  
       {id : 6 , category : <BookPublishPage/>},  
-      {id : 7 , category : <BookCulturePage/>},  
+      {id : 7 , category : <BookCulturePage/>},
+      {id : 8 , category : <RecommendBookPage/>},  
+      {id : 9 , category : <BookSearchPage/>},  
+      {id : 10 , category : <LibraryInfoPage/>},  
+      {id : 11, category : <BookStorePage/>},  
+      {id : 12, category : <BookPublishPage/>},  
+      {id : 13, category : <BookCulturePage/>},
     ])
 
     const page = pages.find((pages) => (pages.id == Number(id)));

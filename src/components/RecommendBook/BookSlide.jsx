@@ -31,17 +31,25 @@ const BookList = [
 
     return (
       <>
-      <p style={{fontSize : "3em", fontWeight : "bold"}}> 이 주의 책</p>
-      <p style={{fontSize : "1.5em"}}> 이번 주 가장 많이 대출된 도서입니다</p>
+      <Row style={{ marginTop : "5em"}}>
+        <div style={{display : "flex"}}>
+            <p style={{fontSize : "3em", fontWeight : "bold"}}> 이 주의 책</p>
+            <p style={{fontSize : "1.5em", marginTop : "1em", marginLeft : "1em"}}> 이번 주 가장 많이 대출된 도서입니다</p>
+        </div>
+    
+      </Row>
 
-   <Row fluid >
-          <Slider className="slick-slider slick-initialized" {...settings} style={{margin :"0 4em"}}>
+
+    <Row fluid  style={{marginBottom : "5em"}}>
+          <Slider className="slick-slider slick-initialized" {...settings} style={{margin :"2em 4em 0 4em"}}>
               {BookList.map((book, index) => (
                 <div className='slideImg' key={index}>
                   <Row>
                     <div style={{position : "relative"}}>
                       <span className='bookrank' style={{position: "absolute", left : "1.2em", backgroundColor : "red", color : "white", 
-                            padding : "0.4em 0.6em", borderBottomLeftRadius : "5px", borderBottomRightRadius : "5px", zIndex : "999", fontWeight : "500"}}> {book.id} </span>
+                            padding : "0.6em 1em", borderBottomLeftRadius : "5px", borderBottomRightRadius : "5px", zIndex : "999", fontWeight : "500"}}> 
+                              <span style={{}}>  {book.id}</span> 
+                              </span>
                       <img style={{width : "14em", height : "20em", objectFit: "fill"}} src={require(`../../asset/weeklybest/${book.bookImg}`) }></img>
                     </div>
                   </Row>
@@ -52,6 +60,34 @@ const BookList = [
                 </div>
               ))}
           </Slider>
+    </Row>
+
+    <Row  style={{marginBottom : "5em"}}>
+    <div style={{display : "flex"}}>
+            <p style={{fontSize : "3em", fontWeight : "bold"}}> 스테디셀러</p>
+            <p style={{fontSize : "1.5em", marginTop : "1em", marginLeft : "1em"}}> 이번달 스테디셀러입니다.</p>
+    </div>
+    <div>
+    <Slider className="slick-slider slick-initialized" {...settings} style={{margin :"2em 4em 0 4em"}}>
+              {BookList.map((book, index) => (
+                <div className='slideImg' key={index}>
+                  <Row>
+                    <div style={{position : "relative"}}>
+                      <span className='bookrank' style={{position: "absolute", left : "1.2em", backgroundColor : "red", color : "white", 
+                            padding : "0.6em 1em", borderBottomLeftRadius : "5px", borderBottomRightRadius : "5px", zIndex : "999", fontWeight : "500"}}> 
+                              <span style={{}}>  {book.id}</span> 
+                              </span>
+                      <img style={{width : "14em", height : "20em", objectFit: "fill"}} src={require(`../../asset/weeklybest/${book.bookImg}`) }></img>
+                    </div>
+                  </Row>
+                  <Row> 
+                    <div style={{marginTop : "0.7em", display : "flex", fontWeight : "bold", fontSize : "1.2em"}}> {book.title} </div><br/>
+                    <div style={{display : "flex", fontSize : "1em"}}>{book.author}</div>
+                  </Row>
+                </div>
+              ))}
+          </Slider>
+    </div>
     </Row>
 </>
 

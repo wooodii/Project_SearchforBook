@@ -135,17 +135,18 @@ const MbtiBook = () => {
   return (
     <div style={{margin: "5em 2em 0 2em"}}>
 
-    <div>
+    <div style={{display : "flex", }}>
+
     <p style={{fontSize : "3em", fontWeight : "bold"}}> MBTI별 추천도서</p>
-    <p style={{fontSize : "1.5em"}}>자신에게 해당하는 MBTI별 책을 찾아보세요!</p>
+    <p style={{fontSize : "1.5em", marginTop : "1em", marginLeft : "1em"}}>자신에게 해당하는 MBTI별 책을 찾아보세요!</p>
 
     </div>
-    <Row style={{margin : "0 auto"}}>
+    <div style={{margin : "0 auto"}}>
       {MbtiBook.filter((i, index)=>(i.id > 0 && i.id <= 8)).map((item) => (
         <div class="flip">
           <div class="card">
 
-            <div class="front">
+            <div class="front" style={{width: "14em", height : "18em"}}>
               <div style={{marginTop : "3em"}}>
               <h1>{item.title}</h1>
               <p>{item.subtitle}</p>
@@ -153,45 +154,44 @@ const MbtiBook = () => {
             </div>
              
             <div class="back">
-              <Row>
-                <img style={{ width: "180px", height: "180px"}} src={require(`../../asset/mbti/${item.img}`) }></img>
-              </Row>
-                <Row>
+              <div>
+                <img style={{ width: "14em", height: "18em"}} src={require(`../../asset/mbti/${item.img}`) }></img>
+              </div>
+                <div>
                   <div>
                     {item.booktitle}
                   </div>
-                </Row>
+                </div>
             </div>
           </div>
         </div>
       ))}
-      </Row>
-        <Row>
+      </div>
+        <div>
         {MbtiBook.filter((i, index)=>(i.id > 8 && i.id <= 16)).map((item) => (
         <div class="flip">
           <div class="card">
-
             <div class="front">
-              <div style={{marginTop : "3em"}}>
+              <div style={{marginTop : "3em", }}>
               <h1>{item.title}</h1>
               <p>{item.subtitle}</p>
               </div>
             </div>
              
-            <div class="back">
-              <Row>
-                <img style={{ width: "180px", height: "180px"}} src={require(`../../asset/mbti/${item.img}`) }></img>
-              </Row>
-                <Row>
+            <div class="back"  style={{width: "14em", height : "18em"}}>
+              <div>
+              <img style={{ width: "14em", height: "18em"}} src={require(`../../asset/mbti/${item.img}`) }></img>
+              </div>
+                <div>
                   <div>
                     {item.booktitle}
                   </div>
-                </Row>
+                </div>
             </div>
           </div>
         </div>
       ))}
-        </Row>
+        </div>
     </div>
   );
 };

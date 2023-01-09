@@ -58,6 +58,7 @@ const HomePage = () => {
                 setScrollPos(menuItems.current.scrollHeight - cloneHeight)
             }
         };
+        
         menuItems.current.addEventListener('scroll', scrollUpdate);
         
         return () => {
@@ -66,7 +67,7 @@ const HomePage = () => {
     }, [])
     
     return ( 
-        <>
+        <div style={{margin  : "2em"}}>
         <div className="main-container" id="main-container">
         <ul ref={menuItems}>
         {PageData.map((projectitem, index) => (
@@ -74,7 +75,7 @@ const HomePage = () => {
             ))}
         </ul>
         </div>
-        </>
+        </div>
     );
 }
 

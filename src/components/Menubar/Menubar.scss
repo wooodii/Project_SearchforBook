@@ -4,11 +4,24 @@ a {
 }
 
 .iconsetting{
-    margin-top : 1em;
+    margin-top : 1.7em;
+}
+
+.iconsetting:hover{
+    color : gray;
 }
 
 .menubar_btn2:hover{
     border:2px solid black;
+    padding  : "3px";
+}
+
+
+.menubar_btn2:hover{
+    border:2px solid black;
+    .iconsetting{
+        color : gray;
+    }
 }
 
 .menubar_btn2:focus{

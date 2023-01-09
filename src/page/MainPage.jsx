@@ -2,9 +2,8 @@ import { useContext, useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import DataContext from '../context/DataContext';
 import {CgUser } from "react-icons/cg";
-import mainpage from '../video/mainpage.mp4';
+// import mainpage from '../video/mainpage.mp4';
 import FooterComp from '../components/FooterComp';
-
 import './MainPage.scss'; 
 
 const MainPage = () => {
@@ -25,9 +24,9 @@ const MainPage = () => {
     return (
         <div style={{width : "100%", height : "100%", overflow: "hidden", margin : "0",position : "relative"}}>
 
-            <video width="100%" loop muted controls autoPlay style={{position : "absolute", left : 0}}>
+            {/* <video width="100%" loop muted controls autoPlay style={{position : "absolute", left : 0}}>
             <source src={mainpage} type="video/mp4" /> 해당 브라우저는 동영상 제공을 지원하지 않습니다.
-            </video> 
+            </video>  */}
 
               <nav style={{padding : "2em 0", fontSize : "1.2em", position : "abosulte", top : 0}} className="navbar">
                 <div>
@@ -36,9 +35,9 @@ const MainPage = () => {
                 
                 <div>
                     <button style={{marginRight : "1.5em", fontSize : "1.2em", }} onClick={() => (navigate('/Home'))}>  홈 </button>
-                    <button style={{marginRight : "1.5em",  fontSize : "1.2em"}} onClick={() => (navigate('/RecommendBook/1'))}> 도서추천</button>
-                    <button style={{marginRight : "1.5em",  fontSize : "1.2em"}} onClick={() => (navigate('/SearchBook'))}>  도서검색</button>
-                    <button style={{marginRight : "1.5em",  fontSize : "1.2em"}} onClick={() => (navigate('/LibInfo'))} > 도서관정보 </button>
+                    <button style={{marginRight : "1.5em",  fontSize : "1.2em"}} onClick={() => (navigate('/RecommendBook/2'))}> 도서추천</button>
+                    <button style={{marginRight : "1.5em",  fontSize : "1.2em"}} onClick={() => (navigate('/RecommendBook/3'))}>  도서검색</button>
+                    <button style={{marginRight : "1.5em",  fontSize : "1.2em"}} onClick={() => (navigate('/RecommendBook/4'))} > 도서관정보 </button>
                 </div>
 
                 <div style={{marginRight : "1.5em"}}>
