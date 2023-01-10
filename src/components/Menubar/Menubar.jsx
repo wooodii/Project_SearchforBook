@@ -15,7 +15,7 @@ const Menubar = () => {
       {id : 4, title : "도서관검색", icon :  <RiFileSearchLine/>},
       {id : 5, title : "서점/북카페", icon : <RiStore3Fill/> },
       {id : 6, title : "출판사", icon : <RiBook2Fill/> },
-      {id : 7, title : "책읽는도시부산", icon : <RiBook3Line/> },
+      {id : 7, title : "마이페이지", icon : <RiBook3Line/> },
     ]
 
     const [boardlist, setBoardList] = useState(MenuBar);

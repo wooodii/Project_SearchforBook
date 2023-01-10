@@ -19,13 +19,7 @@ const RecommendBookPrint = () => {
       {id : 4 , category : <LibraryInfoPage/>},  
       {id : 5 , category : <BookStorePage/>},  
       {id : 6 , category : <BookPublishPage/>},  
-      {id : 7 , category : <BookCulturePage/>},
-      {id : 8 , category : <RecommendBookPage/>},  
-      {id : 9 , category : <BookSearchPage/>},  
-      {id : 10 , category : <LibraryInfoPage/>},  
-      {id : 11, category : <BookStorePage/>},  
-      {id : 12, category : <BookPublishPage/>},  
-      {id : 13, category : <BookCulturePage/>},
+      {id : 7 , category : <MyPage/>}, 
     ])
 
     const page = pages.find((pages) => (pages.id == Number(id)));

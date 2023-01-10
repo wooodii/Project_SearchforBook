@@ -38,7 +38,7 @@ const NewBooks = () => {
                 <p style={{fontSize : "1.5em", marginTop : "1em", marginLeft : "1em"}}> 부산 내 도서관에 입고된 책입니다</p>
                 </div>
 
-            <Row style={{margin : "0 4em"}}>
+            <Row>
                 <Col>
                 <div >
                 {bookInfo ?

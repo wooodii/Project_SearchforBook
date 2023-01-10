@@ -11,8 +11,32 @@ const BookSlide = () => {
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 1000,
-        maxWidth : "55em",
-        maxHight : "65em",
+        responsive: [
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 3,
+              infinite: true,
+              dots: true
+            }
+          },
+          {
+            breakpoint: 600,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2,
+              initialSlide: 2
+            }
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          }
+        ]
     };
 
 const BookList = [
@@ -41,14 +65,14 @@ const BookList = [
 
 
     <Row fluid  style={{marginBottom : "5em"}}>
-          <Slider className="slick-slider slick-initialized" {...settings} style={{margin :"2em 4em 0 4em"}}>
+    <Slider className="slick-slider slick-initialized" {...settings} style={{margin :"2em 4em 0 4em"}}>
               {BookList.map((book, index) => (
                 <div className='slideImg' key={index}>
                   <Row>
                     <div style={{position : "relative"}}>
                       <span className='bookrank' style={{position: "absolute", left : "1.2em", backgroundColor : "red", color : "white", 
                             padding : "0.6em 1em", borderBottomLeftRadius : "5px", borderBottomRightRadius : "5px", zIndex : "999", fontWeight : "500"}}> 
-                              <span style={{}}>  {book.id}</span> 
+                              <span style={{marginLeft : "-0.8em"}}>  {book.id}</span> 
                               </span>
                       <img style={{width : "14em", height : "20em", objectFit: "fill"}} src={require(`../../asset/weeklybest/${book.bookImg}`) }></img>
                     </div>
@@ -59,7 +83,7 @@ const BookList = [
                   </Row>
                 </div>
               ))}
-          </Slider>
+      </Slider>
     </Row>
 
     <Row  style={{marginBottom : "5em"}}>
@@ -75,7 +99,7 @@ const BookList = [
                     <div style={{position : "relative"}}>
                       <span className='bookrank' style={{position: "absolute", left : "1.2em", backgroundColor : "red", color : "white", 
                             padding : "0.6em 1em", borderBottomLeftRadius : "5px", borderBottomRightRadius : "5px", zIndex : "999", fontWeight : "500"}}> 
-                              <span style={{}}>  {book.id}</span> 
+                              <span style={{marginLeft : "-0.8em"}}>  {book.id}</span> 
                               </span>
                       <img style={{width : "14em", height : "20em", objectFit: "fill"}} src={require(`../../asset/weeklybest/${book.bookImg}`) }></img>
                     </div>

@@ -133,7 +133,7 @@ const MbtiBook = () => {
 }]
   
   return (
-    <div style={{margin: "5em 2em 0 2em"}}>
+    <div style={{margin: "5em 0"}}>
 
     <div style={{display : "flex", }}>
 
@@ -146,8 +146,8 @@ const MbtiBook = () => {
         <div class="flip">
           <div class="card">
 
-            <div class="front" style={{width: "14em", height : "18em"}}>
-              <div style={{marginTop : "3em"}}>
+            <div class="front" >
+              <div style={{marginTop : "7em"}}>
               <h1>{item.title}</h1>
               <p>{item.subtitle}</p>
               </div>
@@ -155,10 +155,10 @@ const MbtiBook = () => {
              
             <div class="back">
               <div>
-                <img style={{ width: "14em", height: "18em"}} src={require(`../../asset/mbti/${item.img}`) }></img>
+                <img  style={{width : "14em", height : "20em"}}  src={require(`../../asset/mbti/${item.img}`) }></img>
               </div>
                 <div>
-                  <div>
+                  <div  style={{fontSize : "1.3em", marginTop : "0.5em"}}>
                     {item.booktitle}
                   </div>
                 </div>
@@ -172,18 +172,18 @@ const MbtiBook = () => {
         <div class="flip">
           <div class="card">
             <div class="front">
-              <div style={{marginTop : "3em", }}>
+              <div style={{marginTop : "7em"}}>
               <h1>{item.title}</h1>
               <p>{item.subtitle}</p>
               </div>
             </div>
              
-            <div class="back"  style={{width: "14em", height : "18em"}}>
+            <div class="back" >
               <div>
-              <img style={{ width: "14em", height: "18em"}} src={require(`../../asset/mbti/${item.img}`) }></img>
+              <img style={{width : "14em", height : "20em"}} src={require(`../../asset/mbti/${item.img}`) }></img>
               </div>
                 <div>
-                  <div>
+                  <div style={{fontSize : "1.3em", marginTop : "0.5em"}}>
                     {item.booktitle}
                   </div>
                 </div>

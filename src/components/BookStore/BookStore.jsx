@@ -7,7 +7,7 @@ const BookStore = () => {
         <Row>
             <Col>
             {BookStoreData.filter((i, index) => (index == 1)).map((i, index) => (
-            <div style={{width : "40em", border : "2px solid black", margin : "4em", borderRadius : "20px"}}>
+            <div style={{width : "35em", border : "2px solid black", margin : "4em", borderRadius : "20px"}}>
                 
                 <div style={{ margin : "2em"}}>
                     <img style={{width : "100%", borderRadius : "20px"}}src={require(`../../asset/storeimg/${i.img}`)}></img>
@@ -24,7 +24,7 @@ const BookStore = () => {
             </Col>
             <Col>
             {BookStoreData.filter((i, index) => (index == 2)).map((i, index) => (
-            <div style={{width : "40em", border : "2px solid black", margin : "4em", borderRadius : "20px"}}>
+            <div style={{width : "35em", border : "2px solid black", margin : "4em", borderRadius : "20px"}}>
                 
                 <div style={{ margin : "2em"}}>
                     <img style={{width : "100%", borderRadius : "20px"}}src={require(`../../asset/storeimg/${i.img}`)}></img>
@@ -41,7 +41,7 @@ const BookStore = () => {
             </Col>
             <Col>
             {BookStoreData.filter((i, index) => (index == 3)).map((i, index) => (
-            <div style={{width : "40em", border : "2px solid black", margin : "4em", borderRadius : "20px"}}>
+            <div style={{width : "35em", border : "2px solid black", margin : "4em", borderRadius : "20px"}}>
                 
                 <div style={{ margin : "2em"}}>
                     <img style={{width : "100%", borderRadius : "20px"}}src={require(`../../asset/storeimg/${i.img}`)}></img>
@@ -57,11 +57,11 @@ const BookStore = () => {
         ))}
             </Col>
         </Row>
+
         <Row>
-        
         <Col>
         {BookStoreData.filter((i, index) => (index == 4)).map((i, index) => (
-            <div style={{width : "40em", border : "2px solid black", margin : "4em", borderRadius : "20px"}}>
+            <div style={{width : "35em", border : "2px solid black", margin : "4em", borderRadius : "20px"}}>
                 
                 <div style={{ margin : "2em"}}>
                     <img style={{width : "100%", borderRadius : "20px"}}src={require(`../../asset/storeimg/${i.img}`)}></img>
@@ -79,7 +79,7 @@ const BookStore = () => {
 
         <Col>
         {BookStoreData.filter((i, index) => (index == 5)).map((i, index) => (
-            <div style={{width : "40em", border : "2px solid black", margin : "4em", borderRadius : "20px"}}>
+            <div style={{width : "35em", border : "2px solid black", margin : "4em", borderRadius : "20px"}}>
                 
                 <div style={{ margin : "2em"}}>
                     <img style={{width : "100%", borderRadius : "20px"}}src={require(`../../asset/storeimg/${i.img}`)}></img>
@@ -97,7 +97,7 @@ const BookStore = () => {
 
         <Col>
         {BookStoreData.filter((i, index) => (index == 6)).map((i, index) => (
-            <div style={{width : "40em", border : "2px solid black", margin : "4em", borderRadius : "20px"}}>
+            <div style={{width : "35em", border : "2px solid black", margin : "4em", borderRadius : "20px"}}>
                 
                 <div style={{ margin : "2em"}}>
                     <img style={{width : "100%", borderRadius : "20px"}}src={require(`../../asset/storeimg/${i.img}`)}></img>
@@ -113,10 +113,11 @@ const BookStore = () => {
         ))}
         </Col>
         </Row>
+
         <Row>
         <Col>
         {BookStoreData.filter((i, index) => (index == 7)).map((i, index) => (
-            <div style={{width : "40em", border : "2px solid black", margin : "4em", borderRadius : "20px"}}>
+            <div style={{width : "35em", border : "2px solid black", margin : "4em", borderRadius : "20px"}}>
                 
                 <div style={{ margin : "2em"}}>
                     <img style={{width : "100%", borderRadius : "20px"}}src={require(`../../asset/storeimg/${i.img}`)}></img>
@@ -133,7 +134,7 @@ const BookStore = () => {
         </Col>
         <Col>
         {BookStoreData.filter((i, index) => (index == 8)).map((i, index) => (
-            <div style={{width : "40em", border : "2px solid black", margin : "4em", borderRadius : "20px"}}>
+            <div style={{width : "35em", border : "2px solid black", margin : "4em", borderRadius : "20px"}}>
                 
                 <div style={{ margin : "2em"}}>
                     <img style={{width : "100%", borderRadius : "20px"}}src={require(`../../asset/storeimg/${i.img}`)}></img>
@@ -150,7 +151,7 @@ const BookStore = () => {
         </Col>
         <Col>
         {BookStoreData.filter((i, index) => (index == 9)).map((i, index) => (
-            <div style={{width : "40em", border : "2px solid black", margin : "4em", borderRadius : "20px"}}>
+            <div style={{width : "35em", border : "2px solid black", margin : "4em", borderRadius : "20px"}}>
                 
                 <div style={{ margin : "2em"}}>
                     <img style={{width : "100%", borderRadius : "20px"}}src={require(`../../asset/storeimg/${i.img}`)}></img>

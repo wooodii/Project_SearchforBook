@@ -8,8 +8,8 @@
 }
 
 .flip { 
-  width: 130px;
-  height: 180px;
+  width: 14em;
+  height: 20em;
   position: relative; 
   display: inline-block;
   perspective: 1100px;
@@ -39,6 +39,8 @@
 }
 
 .back { 
+  width: 14em;
+  height: 20em;
   background: #fff; 
   transform: rotateY(180deg);
 }
