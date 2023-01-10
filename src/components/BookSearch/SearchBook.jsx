@@ -71,14 +71,14 @@ import TopSearch from './TopSearch';
             <div style={{margin : "0 10em 0 10em"}}>
                 <Row>
                     <Col xs={5}  style={{marginTop : "7em"}}>
-                    <h3 style={{fontSize : "3em"}}> 도서통합검색</h3> 
+                    <h3 style={{fontSize : "3em", fontWeight : "bold"}}> 도서통합검색</h3> 
                     </Col>
                     <Col xs={7} style={{marginTop : "5em"}}>
                         { 
                            searchFinish == "" ?
                          (
                             <div>
-                            <p style={{fontSize : "1.3em",fontWeight : "bold"}}>실시간 인기검색어</p>
+                            <p style={{textAlign : "center", fontSize :"1.3em",fontWeight : "bold"}}>실시간 인기검색어</p>
                             <TopSearch/>
                             </div>
 
@@ -93,9 +93,9 @@ import TopSearch from './TopSearch';
                     <Form className="d-flex searchForm">
                         <DropdownButton
                                 id="dropdown-button-dark-example2" variant="secondary" title="통합검색" className="me-3 searchMenu">
-                                <Dropdown.Item href="/Searchtitle" onClick={SearchTitle}>제목</Dropdown.Item>
-                                <Dropdown.Item href="/Searchauthor" onClick={SearchAuthor}> 저자</Dropdown.Item>
-                                <Dropdown.Item href="/Searchlib" onClick={SearchLib}> 도서관</Dropdown.Item>
+                                <Dropdown.Item className="searchbtn1" href="/Searchtitle" onClick={SearchTitle}>제목</Dropdown.Item>
+                                <Dropdown.Item className="searchbtn1" href="/Searchauthor" onClick={SearchAuthor}> 저자</Dropdown.Item>
+                                <Dropdown.Item className="searchbtn1" href="/Searchlib" onClick={SearchLib}> 도서관</Dropdown.Item>
                         </DropdownButton>
                         <Form.Control 
                             onChange={e => {setSearchTerm(e.target.value)}}
@@ -108,7 +108,6 @@ import TopSearch from './TopSearch';
                 <Row>
                     <ListGroup variant="flush">
                         <ListGroup.Item className='searchResultNav'>   
-                            <ListGroup.Item> 
                                 <Row>
                                 <Col xs={2}>도서관</Col>
                                 <Col xs={2}>자료실</Col>
@@ -117,9 +116,8 @@ import TopSearch from './TopSearch';
                                 <Col xs={1}>출판사</Col>   
                                 <Col xs={2}>책저장</Col>
                                 </Row>
-                            </ListGroup.Item>
                         </ListGroup.Item>
-                        <div>
+                        <div style={{marginTop : "1em"}}>
                             {bookdata()}
                         </div>
                     </ListGroup>

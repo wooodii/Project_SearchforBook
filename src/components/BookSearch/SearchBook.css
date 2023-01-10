@@ -66,3 +66,17 @@ button{
 .searchBtn{
     width: 50px;
 }
+
+
+.dropdown-item:focus{
+    background-color: gray !important;
+}
+
+.btn-outline-dark {
+    color : gray;
+}
+
+
+.heartbtn:hover{
+    transition: all 0.2s linear;
+}

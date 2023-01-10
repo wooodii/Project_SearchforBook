@@ -60,8 +60,10 @@
                     opacity: 0;
                     display : block;
                     transition: all 0.25s ease-in-out;
+                    transform: translateY(10px);
                 }
             }
+            
         }
     }
 }

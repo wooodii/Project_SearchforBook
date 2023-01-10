@@ -7,11 +7,11 @@ import CityofRead from './CityofRead';
 const BookPublishPage = () => {
 
   const bookpubData = [
-    {id : 1, title : "스토리진", area : "부산 해운대구", des : "주간베스트 도서"},
-    {id : 1, title : "샵메이커즈", area : "부산 수영구", des : "ㄱㄷㅅㄷㄱㅅ"},
-    {id : 1, title : "호밀밭", area : "부산 해운대구", des : ""},
-    {id : 1, title : "스토리진", area : "부산 해운대구", des : ""},
-    {id : 1, title : "스토리진", area : "부산 해운대구", des : ""},
+    {id : 1, title : "스토리진", area : "부산 해운대구", des : "주간베스트 도서", bookImg : ""},
+    {id : 1, title : "샵메이커즈", area : "부산 수영구", des : "ㄱㄷㅅㄷㄱㅅ", bookImg : ""},
+    {id : 1, title : "호밀밭", area : "부산 해운대구", des : "", bookImg : ""},
+    {id : 1, title : "스토리진", area : "부산 해운대구", des : "", bookImg : ""},
+    {id : 1, title : "스토리진", area : "부산 해운대구", des : "", bookImg : ""},
   ]
   const settings = {
     className: "center",

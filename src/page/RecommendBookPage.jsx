@@ -1,7 +1,7 @@
 import MbtiBook from "../components/RecommendBook/MbtiBook";
 import NewBooks from "../components/RecommendBook/NewBooks";
 import BookSlide from '../components/RecommendBook/BookSlide';
-import walk from '../asset/storeimg/walk.png'; 
+import background from '../asset/background.png'; 
 
 // import mainpage from '../video/mainpage.mp4';
 // import mixtape1 from '../video/mixtape1.mp4';
@@ -13,7 +13,7 @@ const RecommendBookPage = () => {
             <source src={mainpage} type="video/mp4"/> 해당 브라우저는 동영상 제공을 지원하지 않습니다.</video>
                */}
             
-            <img width="100%" height="800px" src={walk} alt="" />
+            <img width="100%" height="800px" src={background} alt="" />
 
             <div style={{marginTop : "4em", marginBottom : "6em"}}>
                 <h2 style={{fontSize : "3em", fontWeight : "bold"}}> 도서 추천</h2>
