@@ -1,6 +1,19 @@
-### 도서검색사이트
+# 도석검색사이트
 
-##### 해당 프로젝트는 부산광역시 도서관 포탈을 좀 더 이용하기 쉽도록 리뉴얼한 포트폴리오용 홈페이지 소개 입니다. 
+## 프로젝트 소개 
+React 기반 부산시 도서관 및 도서정보/검색 제공 사이트
 
-#### 사용기술 
-html, scss, css, js, jquery, react, react-redux
++ 기능 
+1) 부산시 내 도서 검색(도서관/도서정보) 기능 
+2) 도서 검색 저장 및 도서관 등록 / 서평 작성
+
++ 추가하고싶은 기능 
+
+## 개발 기간
+22.10 ~ 22.12
+
+## 개발환경 
++ Language : `HTML`, `CSS`, `Javascript`, `React` 
+ `SCSS`, `jquery`, `react-redux` <br/>
++ FrameWork : <br/>
++ Library : React-icons, bootstrap,
