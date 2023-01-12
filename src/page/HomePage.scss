@@ -23,6 +23,12 @@ body{
     background-color : ""
 }
 
+.background_Image{
+    background-image: url('../asset/booklist.png');
+    background-size: cover;
+    width : 100%;
+}
+
 .main-container {
     ul{
         scroll-behavior: smooth;
