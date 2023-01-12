@@ -40,7 +40,9 @@ const TopSearch = () => {
               ))
               .reverse()
               ) : (
-                <Loading />
+                <div style={{position : "absolute", top : "3em"}}>
+                  <Loading/>
+                </div>
                 )}
     </Row>
     <Row>

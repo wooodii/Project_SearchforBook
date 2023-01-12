@@ -4,7 +4,7 @@ a {
 }
 
 .iconsetting{
-    margin-top : 1.7em;
+    margin-top : 1.2em;
 }
 
 .iconsetting:hover{
@@ -14,11 +14,14 @@ a {
 .menubar_btn2:hover{
     border:2px solid black;
     padding  : "3px";
+    .iconsetting{
+        color : gray;
+    }
 }
 
 
+
 .menubar_btn2:hover{
-    border:2px solid black;
     .iconsetting{
         color : gray;
     }
@@ -26,4 +29,17 @@ a {
 
 .menubar_btn2:focus{
     border:2px solid black;
+}
+
+.menutitle:hover{
+    .iconsetting{
+        color : gray;
+    }
+}
+
+.menu_btn{
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 999;
 }

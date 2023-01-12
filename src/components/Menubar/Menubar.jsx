@@ -29,28 +29,30 @@ const Menubar = () => {
       };
 
       return (
-        <>
-        <Slider className="menu_btn" {...settings} style={{textDecorationLine : "none"}}>
+        <div >
+        <Slider className="menu_btn" {...settings} style={{textDecorationLine : "none", margin : "0em 4em"}}>
           {boardlist.map((menu, index) => (
             <NavLink className="menu_btn0" key={menu.id} to={`/Recommendbook/${menu.id}`}>
             <button className ="menu_btn1">
             <div className="menubar_btn2"
-                style={{ borderRadius : "50px"}}>
-                    <div style={{ backgroundColor : "#eee", borderRadius : "50px", width : "6em", height : "6em"}}>
+                style={{ borderRadius : "50px", marginTop : "1em"}}>
+                    <div style={{ backgroundColor : "#eee", borderRadius : "50px", width : "4.5em", height : "4.5em", margin : "0.3em"}}>
                         <IconContext.Provider 
-                            value={{width : "5em", height : "5em", size :"2.5em", className : "iconsetting"}}>
+                            value={{width : "3em", height : "3em", size :"2.2em", className : "iconsetting"}}>
                           {menu.icon}
                         </IconContext.Provider>
                     </div>
             </div>
             </button>
-            <p style={{color : "black", marginTop : "0.5em", marginBottom : "1em"}}> {menu.title}</p> 
+            <p className="menutitle" style={{color : "black", marginTop : "1em", marginBottom : "1em"}}> 
+              {menu.title}
+            </p> 
             </NavLink> ))}
         </Slider>
 
         <hr />
         <Outlet/>
-        </>
+        </div>
     );
 }
  

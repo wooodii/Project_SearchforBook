@@ -1,6 +1,8 @@
 
 const easing = {
     // need other function : tube 9 : 45 
+    linear : (t) => t,
+    easeInQuad : t => t*t,
     easeOutQuad : t => t*(2-t),
     easeInOutCubic : (t) => 
     t < 0.5 ? 4 * t * t * t : (t-1) * (2 * t -2) * (2 * t -2) + 1

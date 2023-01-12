@@ -25,7 +25,7 @@ const MyPage = () => {
 
     return ( 
         <div className="BOX" style={{margin : "0 8em"}}>
-            <NavComp/>
+
             <div style={{marginTop : "10vh"}}> 
                 <Row>
                     <Col className="titleBox">
@@ -53,7 +53,8 @@ const MyPage = () => {
                                 <div >
                                     <Row>
                                         <div>
-                                            {data.state.myLib ? <div className="bookAddList1">
+                                            {data.state.myLib ? 
+                                            <div className="bookAddList1">
                                             {data.state.myLib.map(
                                                 (lib) => [ 
                                                     <div style={{border : "2px solid black", borderRadius :"20px", margin : "0.5em"}}>
@@ -71,11 +72,11 @@ const MyPage = () => {
                     
                     </Col>
                     <Col>
-                            <p style={{fontSize : "1.9em"}}> 도서대출현황 </p>
+                        <p style={{fontSize : "1.6em"}}> 도서대출현황 </p>
                         <div className="borrowbox">
 
                             <Row style={{border : "2px solid black", borderRadius : "10px", margin : "2em"}}>
-                                <div style={{margin : "1em"}}>
+                                <div>
                                 <Row>
                                     대출일자 | 2023. 1. 06
                                 </Row>
@@ -116,7 +117,7 @@ const MyPage = () => {
                     </Col>
                     <Row>
                         <Col>
-                            <p  style={{fontSize : "2em", marginTop : "2em"}}> 추천도서 </p> 
+                            <p  style={{fontSize : "2em", marginTop : "2em"}}> 최근 본 도서 </p> 
                         <div className="mbtibox" style={{marginTop :"2em"}}>
                             <div className="mapagembtipage">
                                 

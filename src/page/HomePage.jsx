@@ -67,7 +67,9 @@ const HomePage = () => {
     }, [])
     
     return ( 
-        <div style={{margin  : "2em"}}>
+
+   
+        <div style={{margin  : "2em"}}>   
         <div className="main-container" id="main-container">
         <ul ref={menuItems}>
         {PageData.map((projectitem, index) => (
