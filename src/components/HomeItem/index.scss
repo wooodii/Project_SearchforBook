@@ -10,13 +10,12 @@
 
     img{
         position : fixed; 
-        left : 40vw;
-        top : 40vh;
+        left : 45vw;
+        top : 50vh;
         width : auto;
         height : clamp(200px, 10vw, 10vw);
         object-fit: cover;
         pointer-events : none; 
-        // 적용x ㅠ
         transition : transform 1s cubic-bezier(0.165, 0.84, 0.44, 1);
     }
 
@@ -29,33 +28,30 @@
 
     .info-block{
         position : fixed;
-        top : 50%;
+        top : 70%;
         transform : translateY(-50%);
 
         left : 70vw;
         z-index : 1;
         text-align : left;
-        font-size : 2.5em;
+        font-size : 1.8em;
         
         .info-block-header{
-            margin-bottom : 20px;
+            margin-bottom : 2em;
             color : black;
             font-weight: bold;
             font-size: 2em;
 
-            svg{
-                margin-right : 4px;
-            }
-
             span {
                 display: flex;
-
+                align-items : center;
             }
 
             p{
                 margin-bottom: 10px;
                 overflow: hidden;
                 color : #999;
+
                 span{
                     opacity: 0;
                     display : block;

@@ -78,17 +78,18 @@ const BookList1 = [
 
 
     <Row fluid  style={{marginBottom : "5em"}}>
-    <Slider className="slick-slider slick-initialized" {...settings} style={{margin :"2em 4em 0 4em"}}>
+    <Slider className="slick-slider slick-initialized" {...settings} style={{margin :"2em 4em 0 4em", paddingRight : "7em"}}>
               {BookList1.map((book, index) => (
                 <div className='slideImg' key={index}>
                   <Row>
                     <div style={{position : "relative"}}>
-                      <img style={{width : "14em", height : "20em", objectFit: "fill"}} src={require(`../../asset/mbti/${book.bookImg}`) }></img>
+                      <img style={{width : "14em", height : "20em", objectFit: "fill"}} 
+                        src={require(`../../asset/mbti/${book.bookImg}`) }></img>
                     </div>
                   </Row>
                   <Row> 
-                    <div style={{marginTop : "0.7em", display : "flex", fontWeight : "bold", fontSize : "1.2em"}}> {book.title} </div><br/>
-                    <div style={{display : "flex", fontSize : "1em"}}>{book.author}</div>
+                    <div style={{marginTop : "0.7em", display : "flex", fontWeight : "bold", fontSize : "1.4em"}}> {book.title} </div><br/>
+                    <div style={{display : "flex", fontSize : "1.2em"}}>{book.author}</div>
                   </Row>
                 </div>
               ))}
@@ -101,7 +102,7 @@ const BookList1 = [
             <p style={{fontSize : "1.5em", marginTop : "1em", marginLeft : "1em"}}> 이번달 스테디셀러입니다.</p>
     </div>
     <div>
-    <Slider className="slick-slider slick-initialized" {...settings} style={{margin :"2em 4em 0 4em"}}>
+    <Slider className="slick-slider slick-initialized" {...settings} style={{margin :"2em 2em 0 4em"}}>
               {BookList.map((book, index) => (
                 <div className='slideImg' key={index}>
                   <Row>
@@ -110,12 +111,13 @@ const BookList1 = [
                             padding : "0.6em 1em", borderBottomLeftRadius : "5px", borderBottomRightRadius : "5px", zIndex : "999", fontWeight : "500"}}> 
                               <span style={{marginLeft : "-0.8em"}}>  {book.id}</span> 
                               </span>
-                      <img style={{width : "14em", height : "20em", objectFit: "fill"}} src={require(`../../asset/weeklybest/${book.bookImg}`) }></img>
+                      <img style={{width : "14em", height : "20em", objectFit: "fill"}} 
+                        src={require(`../../asset/weeklybest/${book.bookImg}`) }></img>
                     </div>
                   </Row>
                   <Row> 
-                    <div style={{marginTop : "0.7em", display : "flex", fontWeight : "bold", fontSize : "1.2em"}}> {book.title} </div><br/>
-                    <div style={{display : "flex", fontSize : "1em"}}>{book.author}</div>
+                    <div style={{marginTop : "0.7em", display : "flex", fontWeight : "bold", fontSize : "1.4em"}}> {book.title} </div><br/>
+                    <div style={{display : "flex", fontSize : "1.2em"}}>{book.author}</div>
                   </Row>
                 </div>
               ))}

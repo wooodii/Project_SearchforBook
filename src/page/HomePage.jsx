@@ -71,7 +71,9 @@ const HomePage = () => {
         <div className="main-container" id="main-container">
         <ul ref={menuItems}>
         {PageData.map((projectitem, index) => (
-            <Index key={index} project={projectitem} itemIndex={index}/> 
+            <Index key={index} 
+                project={projectitem} 
+                itemIndex={index}/> 
             ))}
         </ul>
         </div>

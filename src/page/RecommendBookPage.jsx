@@ -35,7 +35,7 @@ const RecommendBookPage = () => {
                                 <button className="pageupbtn" onClick={() => (window.scrollTo(0,0))}>
                                 <p style={{fontSize : "1.3em", display:"flex", alignItems :"center", 
                                 fontFamily: 'Playfair Display SC', marginLeft:"1vw", marginTop:"1.5vh"}}> 
-                                 page<br/> up </p></button>
+                                 scroll </p></button>
                          
                             </div>
             </div>

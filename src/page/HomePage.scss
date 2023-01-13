@@ -20,13 +20,13 @@
 
 body{
     font-family : 'GowunBatang-Regular';
-    background-color : ""
 }
 
 .background_Image{
-    background-image: url('../asset/booklist.png');
+    background-image: url('../asset/42491.jpg');
     background-size: cover;
     width : 100%;
+    margin-top : 2em;
 }
 
 .main-container {
@@ -34,7 +34,7 @@ body{
         scroll-behavior: smooth;
         position :relative;
         width : 100vw;
-        height :100vh;
+        height : 70vh;
         padding-left: 10vw;
         box-sizing: border-box;
         overflow: auto;

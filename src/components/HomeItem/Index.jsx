@@ -148,16 +148,15 @@ const Index = ({project, itemIndex}) => {
 
             <div className="info-block">
                 <p className="info-block-header">
-                    <span> 
+                    <span className="info-block-span"> 
                         0{itemIndex}
                     </span>
                 </p>
             {project.info.map((element) => (
-                <p key={element}>
-                    <span>{element}</span>
+                <p className="info-p" key={element}>
+                    <span className="info-span-content">{element}</span>
                 </p>
             ))}
-
             </div>
 
 
