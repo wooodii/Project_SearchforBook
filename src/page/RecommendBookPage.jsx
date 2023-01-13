@@ -32,12 +32,11 @@ const RecommendBookPage = () => {
             <div>
 
             <div className='pagebtnbox' >
-                                <button className="pageupbtn" onClick={() => (window.scrollTo(0,0))}>
-                                <p style={{fontSize : "1.3em", display:"flex", alignItems :"center", 
-                                fontFamily: 'Playfair Display SC', marginLeft:"1vw", marginTop:"1.5vh"}}> 
-                                 scroll </p></button>
-                         
-                            </div>
+                <button className="pageupbtn" onClick={() => (window.scrollTo(0,0))}>
+                <p style={{fontSize : "1.3em", display:"flex", alignItems :"center", 
+                fontFamily: 'Playfair Display SC', marginLeft:"1vw", marginTop:"1.5vh"}}> 
+                    scroll </p></button>
+                    </div>
             </div>
             
         </>

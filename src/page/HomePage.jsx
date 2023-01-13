@@ -45,11 +45,13 @@ const HomePage = () => {
             }
         }
 
+        
         useEffect(() => {
         const cloneHeight = cloneItems();
         initScroll();
         menuItems.current.style.scrollBehavior = 'unset';
 
+        //1) 스크롤 해서 목차 올리기
         const scrollUpdate = () => {
             const scrollPos = getScrollPos();
             if(cloneHeight + scrollPos >= menuItems.current.scrollHeight){
@@ -62,7 +64,7 @@ const HomePage = () => {
         menuItems.current.addEventListener('scroll', scrollUpdate);
         
         return () => {
-        menuItems.current.removeEventListener('scroll', scrollUpdate);
+         // menuItems.current.removeEventListener('scroll', scrollUpdate);
         }
     }, [])
     
