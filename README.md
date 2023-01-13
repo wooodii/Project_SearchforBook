@@ -15,6 +15,6 @@
 - 로그인을 통한 마이페이지 관리 (예약도서 추가, 리뷰작성 UI)
 
 #### 사용언어 
-html, scss, css, js, jquery, react, react-redux, Node.js
+`html`, `scss`, `css`, `js`, `jquery`, `react`, `react-redux`, `Node.js`
 
 #### 깃헙 링크 
