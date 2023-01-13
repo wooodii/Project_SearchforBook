@@ -13,18 +13,22 @@
 }
 
 .addLibraryBtn{
-    font-family: 'Playfair Display SC', serif;
-    font-size: 1.2em;
+    font-size: 0.5em;
     border-radius: 10px;
     margin: 12px;
+    border : 2px solid black;
+    padding : 3px 5px;
 }
 
-.addLibraryBtn :hover{
-    font-family: 'Playfair Display SC', serif;
-    font-size: 1em;
-    background-color: lightgray;
+.addLibraryBtn:hover{
+    background-color: red !important;
+}
+
+.addLibraryBtn:focus{
+    background-color: red !important;
     color : white;
 }
+
 
 .librarylink :hover {
     font-weight: bold;

@@ -1,7 +1,5 @@
-import { Checkbox } from "@mui/material";
-import { useContext, useEffect } from "react";
-import { Container, Row, Col } from "react-bootstrap";
-import {FcAdvertising, FcClock, FcLike, FcLikePlaceholder, FcLock, FcOrganization, FcPhone } from "react-icons/fc"; 
+import { useContext } from "react";
+import { Container, Row, Col } from "react-bootstrap"; 
 import './LibraryInfo.css';
 import DataContext from '../../context/DataContext'
 
@@ -21,8 +19,10 @@ const LibraryInfomation = (
             <Col xs={5}>
                         <Row style={{fontWeight :"bold", fontSize:"1.8em", display : "flex"}}> 
                             <Row> <div style={{ fontSize : "0.7em"}}> {도서관명 && 도서관명} </div>  </Row>
-                            <Row> <div> <button className="addLibraryBtn" onClick={likelibrary}> <FcLike/> </button>  </div></Row>
-                            
+                            <Row> <div> 
+                                <button className="addLibraryBtn" onClick={likelibrary}> 
+                                        도서관 등록
+                                </button>  </div></Row>
                         </Row>
             </Col>
             <Col xs={7}>

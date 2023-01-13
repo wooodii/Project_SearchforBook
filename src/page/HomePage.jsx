@@ -1,6 +1,5 @@
 import './HomePage.scss';
 import React from "react";
-import PageData from '../components/HomeItem/PageData';
 import Index from '../components/HomeItem/Index';
 import { useState } from 'react';
 import pageData from '../components/HomeItem/PageData';
@@ -69,10 +68,11 @@ const HomePage = () => {
     }, [])
     
     return ( 
-        <div className="background_Image">   
+        <div style={{width : "100%"}}>
+             <div className="background_Image">   
         <div className="main-container" id="main-container">
         <ul ref={menuItems}>
-        {PageData.map((projectitem, index) => (
+        {renderItems.map((projectitem, index) => (
             <Index key={index} 
                 project={projectitem} 
                 itemIndex={index}/> 
@@ -80,6 +80,8 @@ const HomePage = () => {
         </ul>
         </div>
         </div>
+        </div>
+       
     );
 }
 

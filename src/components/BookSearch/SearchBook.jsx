@@ -38,6 +38,7 @@ import TopSearch from './TopSearch';
                     <PageNotFound/>
                 } })
             setSearchArray(newArray);
+            
         },[searchFinish])
 
         // 페이지네이션 구현 

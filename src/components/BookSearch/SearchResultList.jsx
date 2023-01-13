@@ -23,9 +23,13 @@ const SearchResultList = ({도서관명, 자료실, 서명, 저자, 출판사}) 
                         <Col  xs={2}>{저자 && 저자}</Col>
                         <Col  xs={1}>{출판사 && 출판사}</Col>  
                         <Col  xs={2}>
-                        <button  onClick={likebook} type="checkbox"> 
-                            <FcLikePlaceholder style={{fontSize :"1.5em"}}/> 
-                        </button> 
+
+
+                        <button className="cartBtn" onClick={() => (likebook)}>
+                            저장하기
+                        </button>
+
+
                         </Col>
                     </Row>
              <hr />   

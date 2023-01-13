@@ -88,10 +88,10 @@ const BusanMap = () => {
 
     return (
         <> 
-        <div class="main5">
+        <div class="main5" style={{ borderRadius : "10px"}}>
         <div class="section">
 				<div class="innerLeft">
-					<div style={{color : "white", postition : "absolute", marginTop : "2em"}}>
+					<div style={{marginLeft : "-20em", color : "white", postition : "absolute", marginTop : "-0.0em"}}>
 							찾으시는 지역을 선택해주세요
 					</div>
 					<div class="map web-view">

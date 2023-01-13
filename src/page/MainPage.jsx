@@ -2,7 +2,7 @@ import { useContext, useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import DataContext from '../context/DataContext';
 import {CgUser } from "react-icons/cg";
-import mainpage from '../video/mainpage.mp4';
+// import mainpage from '../video/mainpage.mp4';
 import FooterComp from '../components/FooterComp';
 import './MainPage.scss'; 
 
@@ -23,10 +23,10 @@ const MainPage = () => {
 
     return (
         <div style={{width : "100%", height : "100%", overflow: "hidden", margin : "0",position : "relative"}}>
-
+{/* 
             <video width="100%" loop muted controls autoPlay style={{position : "absolute", left : 0}}>
             <source src={mainpage} type="video/mp4" /> 해당 브라우저는 동영상 제공을 지원하지 않습니다.
-            </video>  
+            </video>   */}
 
               <nav style={{padding : "2em 0", fontSize : "1.2em", position : "abosulte", top : 0}} className="navbar">
                 <div>
