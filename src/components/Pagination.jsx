@@ -8,7 +8,7 @@ function Pagination({ total, limit, page, setPage }) {
     <>
       <Nav>
         <Button onClick={() => setPage(page - 1)} disabled={page === 1}>
-          prev 
+          이전
         </Button>
         {Array(numPages)
           .fill()
@@ -22,7 +22,7 @@ function Pagination({ total, limit, page, setPage }) {
             </Button>
           ))}
         <Button onClick={() => setPage(page + 1)} disabled={page === numPages}>
-          next 
+          다음 
         </Button>
       </Nav>
     </>
@@ -47,7 +47,7 @@ const Button = styled.button`
   font-size: 1rem;
 
   &:hover {
-    background: lightgray;
+    background: gray;
     cursor: pointer;
     transform: translateY(-2px);
   }

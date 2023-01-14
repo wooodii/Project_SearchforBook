@@ -48,3 +48,9 @@
 .flip:hover .card {
   transform: rotateY(180deg);
 }
+
+.pageupbtn:hover{
+  background-color: lightgray;
+  opacity: 70%;
+  font-weight: bold;
+}

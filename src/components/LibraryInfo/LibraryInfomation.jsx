@@ -15,10 +15,13 @@ const LibraryInfomation = (
 
         return ( 
             <Container>
-            <Row style={{border : "2px solid black", borderRadius : "20px", margin : "2em 0", padding : "1.5em"}}>
+            <Row 
+            style={{border : "2px solid lightgray", 
+            borderRadius : "20px", margin : "2em 0", padding : "1.5em"}}>
+            
             <Col xs={5}>
                         <Row style={{fontWeight :"bold", fontSize:"1.8em", display : "flex"}}> 
-                            <Row> <div style={{ fontSize : "0.7em"}}> {도서관명 && 도서관명} </div>  </Row>
+                            <Row> <div style={{ fontSize : "1em"}}> {도서관명 && 도서관명} </div>  </Row>
                             <Row> <div> 
                                 <button className="addLibraryBtn" onClick={likelibrary}> 
                                         도서관 등록

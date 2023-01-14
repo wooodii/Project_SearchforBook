@@ -12,7 +12,7 @@ const Menubar = () => {
       {id : 1, title : "목차", icon : <RiBookmark3Fill/> },
       {id : 2, title : "도서추천", icon : <RiBookmarkFill/>},
       {id : 3, title : "도서검색", icon : <RiFileSearchFill/>  },
-      {id : 4, title : "도서관검색", icon :  <RiFileSearchLine/>},
+      {id : 4, title : "도서관안내", icon :  <RiFileSearchLine/>},
       {id : 5, title : "서점/북카페", icon : <RiStore3Fill/> },
       {id : 6, title : "출판사", icon : <RiBook2Fill/> },
       {id : 7, title : "마이페이지", icon : <RiBook3Line/> },

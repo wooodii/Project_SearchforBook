@@ -11,9 +11,10 @@ const BookStorePage = () => {
 
         
         <h2 style={{fontSize : "3em", fontWeight : "bold", marginTop : "1em"}}> 부산 서점</h2>
-        <p style={{fontSize : "1.3em"}}>   우리 지역의 크고 다양한 서점들을 소개합니다.</p>
+        <p style={{fontSize : "1.3em", marginBottom : "2em"}}>   우리 지역의 크고 다양한 서점들을 소개합니다.</p>
         
         <hr />
+
         <div style={{display : "flex", margin : "0 4em"}}>
         <BookStore/>
         </div>

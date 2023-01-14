@@ -138,60 +138,66 @@ const MbtiBook = () => {
     <div style={{display : "flex", }}>
 
     <p style={{fontSize : "3em", fontWeight : "bold"}}> MBTI별 추천도서</p>
-    <p style={{fontSize : "1.5em", marginTop : "1em", marginLeft : "1em"}}>자신에게 해당하는 MBTI별 책을 찾아보세요!</p>
+    <p style={{fontSize : "1.5em", marginTop : "1em", marginLeft : "1em"}}>
+      마음에 드는 책에 마우스를 올려보세요</p>
 
     </div>
     <div style={{margin : "0 auto"}}>
       {MbtiBook.filter((i, index)=>(i.id > 0 && i.id <= 8)).map((item) => (
         <div class="flip">
           <div class="card">
-
             <div class="front" >
-              <div style={{marginTop : "7em"}}>
-              <h1>{item.title}</h1>
-              <p>{item.subtitle}</p>
-              </div>
-            </div>
-             
-            <div class="back">
-              <div>
+                            <div>
                 <img  style={{width : "14em", height : "20em"}}  src={require(`../../asset/mbti/${item.img}`) }></img>
               </div>
                 <div>
-                  <div  style={{fontSize : "1.3em", marginTop : "0.5em"}}>
-                    {item.booktitle}
-                  </div>
                 </div>
+            </div>
+             
+            <div class="back">
+            <div style={{marginTop : "7em"}}>
+              <h1>{item.title}</h1>
+              
+              </div>
+              <p style={{fontSize : "1.2em"}}>{item.subtitle}</p>  
+              <p > {item.booktitle} </p>
             </div>
           </div>
         </div>
       ))}
       </div>
+
         <div>
         {MbtiBook.filter((i, index)=>(i.id > 8 && i.id <= 16)).map((item) => (
         <div class="flip">
           <div class="card">
             <div class="front">
-              <div style={{marginTop : "7em"}}>
-              <h1>{item.title}</h1>
-              <p>{item.subtitle}</p>
-              </div>
-            </div>
-             
-            <div class="back" >
               <div>
               <img style={{width : "14em", height : "20em"}} src={require(`../../asset/mbti/${item.img}`) }></img>
               </div>
                 <div>
-                  <div style={{fontSize : "1.3em", marginTop : "0.5em"}}>
-                    {item.booktitle}
-                  </div>
+
                 </div>
+            </div>
+             
+            <div class="back" > <div style={{marginTop : "7em"}}>
+              <h1>{item.title}</h1>
+              <p style={{fontSize : "1.2em"}}>{item.subtitle}</p>  
+             <p> {item.booktitle} </p> 
+              </div>
+             
             </div>
           </div>
         </div>
       ))}
         </div>
+        <button 
+                onClick={() => (window.scrollTo(0,0))}>
+                <p className="pageupbtn" style={{
+                fontSize : "1.3em", display:"flex", alignItems :"center", 
+                padding : "0.3em 1em",  marginLeft:"1vw", 
+                marginTop:"1.5vh", border : "2px solid black", borderRadius : "50px"}}> 
+                    위로 </p></button>
     </div>
   );
 };

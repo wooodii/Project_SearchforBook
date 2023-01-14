@@ -29,20 +29,7 @@ const RecommendBookPage = () => {
                 <NewBooks/>
                 <BookSlide1/>
                 <MbtiBook/>
-            </div>
 
-            <div>
-
-            <div style={{position : "absolute", right : 0, bottom : "10px" }}>
-                <button className="pageupbtn" 
-                onClick={() => (window.scrollTo(0,0))}>
-                <p style={{
-                fontSize : "1.3em", display:"flex", alignItems :"center", 
-                padding : "0.3em 1em",
-                fontFamily: 'Playfair Display SC', marginLeft:"1vw", 
-                marginTop:"1.5vh", border : "2px solid black", borderRadius : "50px"}}> 
-                    scroll </p></button>
-                    </div>
             </div>
             
         </>

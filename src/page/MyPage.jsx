@@ -48,7 +48,7 @@ const MyPage = () => {
                 </Row>
                 <Row style={{margin : "8vh 0 8vh 0"}}>
                     <Col >
-                        <p style={{fontSize : "1.5em", marginTop : "2em"}}> 도서검색내역 </p>
+                        <p style={{fontSize : "1.5em", marginTop : "2em"}}> 도서 저장 내역 </p>
                         <div style={{overflow : "scroll", marginTop : "-0.5em"}} className="reservationbox">
                                 <div >
                                     <Row>
@@ -74,9 +74,8 @@ const MyPage = () => {
                     <Col>
                         <p style={{fontSize : "1.6em"}}> 도서대출현황 </p>
                         <div className="borrowbox">
-
-                            <Row style={{border : "2px solid black", borderRadius : "10px", margin : "2em"}}>
-                                <div>
+                            <Row style= {{borderRadius : "10px", margin : "2em"}}>
+                                <div style={{border : "2px solid gray", marginTop : "1em", borderRadius : "10px"}} >
                                 <Row>
                                     대출일자 | 2023. 1. 06
                                 </Row>
@@ -96,17 +95,16 @@ const MyPage = () => {
                     
                     </Col>
                     <Col>
-                        <p  style={{fontSize : "1.5em", marginTop : "2em"}}> 단골도서관 등록</p>
+                        <p  style={{fontSize : "1.5em", marginTop : "2em"}}> 단골도서관</p>
                         <div style={{overflow : "scroll", marginTop : "-0.5em"}} className="reservationbox">
                                 <div >
                                 <Row>
                                 {/** [book.도서관명] 배열로 여러개 넣는 경우 사용 */}
                                 {data.state.myBook ? 
-                                (<div style={{fontSize : "1.5em"}}>
+                                (<div style={{fontSize : "1em"}}>
                                     {data.state.myBook.map((book)=>[
-                                        <div style={{border : "2px solid black", borderRadius : "10px", margin : "1em"}}>
-                                        <div>{book.도서관명} </div>
-                                        <div>{book.홈페이지주소} </div> 
+                                        <div style={{border : "2px solid gray", borderRadius : "10px", margin : "1em", padding : "0.8em 2em", display :"inline-block"}}>
+                                        <a href={book.홈페이지주소} >{book.도서관명}</a> 
                                         </div>
                                         ])}
                                 </div>) : <div>등록없음 </div>}
@@ -116,14 +114,7 @@ const MyPage = () => {
                         </div>
                     </Col>
                     <Row>
-                        <Col>
-                            <p  style={{fontSize : "2em", marginTop : "2em"}}> 최근 본 도서 </p> 
-                        <div className="mbtibox" style={{marginTop :"2em"}}>
-                            <div className="mapagembtipage">
-                                
-                            </div>
-                        </div>
-                        </Col>
+                        
                         <Col>
                             <p style={{fontSize : "2em", marginTop : "2em"}} > 도서후기작성</p>
                         <div className="bookcommentbox" style={{marginTop : "0.5em"}}>
