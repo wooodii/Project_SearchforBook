@@ -25,7 +25,7 @@ const CityofRead = () => {
         backgroundColor : "#eee", margin : "3em 5em", padding : "2em"}}>
 
             {busandata.map((i ,index) => (
-            <Card style={{ width: '20rem', margin : "3em"}}>
+            <Card style={{ width: '20rem', margin : "3em"}}> 
             <Card.Img variant="top" src={uncomfortableStore1} width="100%" height="50%" />
             <Card.Body>
             <Card.Title>{i.title}</Card.Title>
