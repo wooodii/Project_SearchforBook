@@ -17,7 +17,7 @@ const CityofRead = () => {
 
     return (
       <>
-      <p style={{fontSize : "3em", fontWeight : "bold"}}> 책 읽는 도시 부산</p>
+      <p style={{fontSize : "3em", fontWeight : "bold", marginTop : "5em"}}> 책 읽는 도시 부산</p>
       <p style={{fontSize : "1.5em"}}> 부산시민이라면 참여할 수 있는 도서관련 캠페인입니다.</p>
         <div style={{margin : "0 5em", 
         marginRight : "1.5em", display : "flex",
@@ -25,16 +25,18 @@ const CityofRead = () => {
         backgroundColor : "#eee", margin : "3em 5em", padding : "2em"}}>
 
             {busandata.map((i ,index) => (
-            <Card style={{ width: '20rem', margin : "3em"}}> 
-            <Card.Img variant="top" src={uncomfortableStore1} width="100%" height="50%" />
-            <Card.Body>
-            <Card.Title>{i.title}</Card.Title>
-            <Card.Text> {i.context}</Card.Text>
-            <Button type="button" 
-            onClick={() => (window.location.href = `{i.link}`)} variant="primary">
-              바로가기
-            </Button>
-            </Card.Body>
+            <Card style={{ width: '20rem', margin : "2em 1.5em"}}> 
+              <Card.Img
+                variant="top" 
+                src={uncomfortableStore1} />
+              <Card.Body>
+              <Card.Title>{i.title}</Card.Title>
+              <Card.Text> {i.context}</Card.Text>
+              <Button type="button" 
+              onClick={() => (window.location.href = `{i.link}`)} variant="primary">
+                바로가기
+              </Button>
+              </Card.Body>
             </Card>
             ))}
         
