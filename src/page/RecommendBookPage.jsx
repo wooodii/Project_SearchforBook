@@ -3,6 +3,7 @@ import NewBooks from "../components/RecommendBook/NewBooks";
 import BookSlide from '../components/RecommendBook/BookSlide';
 import background from '../asset/background.png'; 
 import BookSlide1 from "../components/RecommendBook/BookSlide1";
+import 마지막섬 from '../asset/banner/마지막섬.png';
 
 // import mainpage from '../video/mainpage.mp4';
 // import mixtape1 from '../video/mixtape1.mp4';
@@ -10,11 +11,7 @@ import BookSlide1 from "../components/RecommendBook/BookSlide1";
 const RecommendBookPage = () => {
     return (
         <>
-            {/* <video width="100%" height="100%" controls autoPlay>
-            <source src={mainpage} type="video/mp4"/> 해당 브라우저는 동영상 제공을 지원하지 않습니다.</video>
-               */}
-            
-            <img width="100%" height="800px" src={background} alt="" />
+            <img width="100%" height="800px" src={마지막섬} alt="" />
 
             <div style={{marginTop : "4em", marginBottom : "6em"}}>
                 <h2 style={{fontSize : "3em", fontWeight : "bold"}}> 도서 추천</h2>

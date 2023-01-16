@@ -330,7 +330,7 @@ Table of Contents
 	transform: rotateX(90deg) rotateZ(90deg) translateZ(80px) translateX(-2px) translateY(-78px);
 }
 .hardcover_front li:last-child:before {
-	/* box-shadow: 0px 0px 30px 5px #333; */ 
+	 box-shadow: 0px 0px 30px 5px #333; 
 	-webkit-transform: rotateX(90deg) rotateZ(90deg) translateZ(-140px) translateX(-2px) translateY(-78px);
 	-moz-transform: rotateX(90deg) rotateZ(90deg) translateZ(-140px) translateX(-2px) translateY(-78px);
 	transform: rotateX(90deg) rotateZ(90deg) translateZ(-140px) translateX(-2px) translateY(-78px);
@@ -358,7 +358,7 @@ Table of Contents
 .hardcover_back li:last-child:after,
 .hardcover_back li:last-child:before {
 	width: 4px;
-	height: 160px;
+	height: 30em;
 }
 
 .hardcover_back li:last-child:after {
@@ -368,7 +368,7 @@ Table of Contents
 }
 
 .hardcover_back li:last-child:before {
-	/*box-shadow: 10px -1px 80px 20px #666; */ 
+	box-shadow: 10px -1px 80px 20px #666; 
 	-webkit-transform: rotateX(90deg) rotateZ(90deg) translateZ(-140px) translateX(2px) translateY(-78px);
 	-moz-transform: rotateX(90deg) rotateZ(90deg) translateZ(-140px) translateX(2px) translateY(-78px);
 	transform: rotateX(90deg) rotateZ(90deg) translateZ(-140px) translateX(2px) translateY(-78px);
@@ -586,14 +586,14 @@ Table of Contents
 	letter-spacing: 0.05em;
 	text-align: center;
 	margin: 54% 0 0 0;
-	/*text-shadow: -1px -1px 0 rgba(0,0,0,0.1);*/
+	text-shadow: -1px -1px 0 rgba(0,0,0,0.1);
 }
 
 .coverDesign p {
 	color: #f8f8f8;
 	font-size: 1em;
 	text-align: center;
-	/* text-shadow: -1px -1px 0 rgba(0,0,0,0.1); */
+	text-shadow: -1px -1px 0 rgba(0,0,0,0.1); 
 }
 
 .yellow {

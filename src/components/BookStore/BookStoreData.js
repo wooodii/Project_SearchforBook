@@ -19,7 +19,7 @@ const BookStoreData = [
     store : "북그러움", 
     content : "독서모임이나 북콘서트등 다양한 문화를 즐길 수 있는 곳",
     adress : "부산광역시 부산진구 서전로 46번길 10-7 2층",
-    img : "walk.png"
+    img : "북그러움.png"
    },
    {
     id : 4,
@@ -40,21 +40,21 @@ const BookStoreData = [
     store : "책방숲", 
     content : "디자인서적과 독립출판물들을 볼 수 있는 곳",
     adress : "부산광역시 동래구 온천천로 431번길 25-1",
-    img : "walk.png"
+    img : "책방숲.png"
    },
    {
     id : 7,
     store : "카프카의 밤", 
     content : "프란츠 카프카 작가를 좋아해 지어진 책방이름",
     adress : "부산광역시 연제구 고분로 191번길 20",
-    img : "walk.png"
+    img : "카프카의밤.png"
    },
    {
     id : 8,
     store : "책방 밭개", 
     content : "전포동의 옛 지명인 밭개에서 이름을 따와서 지은 책방 이름",
     adress : "부산광역시 부산진구 서전로 37번길 26",
-    img : "walk.png"
+    img : "책방밭개.png"
    }
 ]
 

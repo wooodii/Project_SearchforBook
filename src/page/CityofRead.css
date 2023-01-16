@@ -52,3 +52,13 @@ h4{
 .cityBoxImg:hover{
     transform: scale(1.15);
 }
+
+.btn_busan{
+    color : "white";
+    background-color: lightslategray !important;
+    border: none;
+}
+
+.btn_busan:hover{
+    background-color: #242815 !important;
+}

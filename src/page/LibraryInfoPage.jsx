@@ -32,9 +32,9 @@ const LibraryInfoPage = () => {
                 </Row>
                 <Row>
                     <Col xs={5} style={{marginTop : "2em"}}>
-                        <BusanMap style={{width : "100%"}}/>
+                        <BusanMap style={{width : "100%"}} searchPlace={searchLib}/>
                     </Col>
-                    <Col xs={7}>
+                    <Col xs={7} style={{height : "100vh"}}>
                     <div style={{ marginTop : "5vh"}} >
                         {LibraryList.filter((val) => {
                             if(searchLib == "" ){
