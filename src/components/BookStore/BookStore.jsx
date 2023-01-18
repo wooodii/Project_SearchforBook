@@ -4,10 +4,11 @@ import BookStoreData from './BookStoreData';
 const BookStore = () => {
     return (
         <>
-            <div style={{margin : "0 10em"}}>
+            <div style={{margin : "0 10em", display : "flex"}}>
             {BookStoreData.map((i, index) => (
                 <div style={{
                     border : "2px solid gray", 
+                    display : "block", width : "50vh",
                     margin : "4em", borderRadius : "10px"}}>
                 
                 <div className='imgcover' 

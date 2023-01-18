@@ -8,12 +8,13 @@ import BookStorePage from "./BookStorePage";
 import BookPublishPage from "./BookPublishPage";
 import MyPage from '../page/MyPage';
 import HomePage from '../page/HomePage'; 
+import HomePi from "./HomePi";
 
 const RecommendBookPrint = () => {
     const {id} = useParams();
 
     const [pages, setPages] = useState([
-      {id : 1 , category : <HomePage/>},  
+      {id : 1 , category : <HomePi/>},  
       {id : 2 , category : <RecommendBookPage/>},  
       {id : 3 , category : <BookSearchPage/>},  
       {id : 4 , category : <LibraryInfoPage/>},  

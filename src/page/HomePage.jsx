@@ -63,12 +63,12 @@ const HomePage = () => {
         menuItems.current.addEventListener('scroll', scrollUpdate);
         
         return () => {
-         // menuItems.current.removeEventListener('scroll', scrollUpdate);
+        //  menuItems.current.removeEventListener('scroll', scrollUpdate);
         }
     }, [])
     
     return ( 
-        <div style={{width : "100%"}}>
+        <div >
              <div className="background_Image">   
         <div className="main-container" id="main-container">
         <ul ref={menuItems}>

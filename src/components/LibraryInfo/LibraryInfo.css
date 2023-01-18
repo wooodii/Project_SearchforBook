@@ -17,18 +17,16 @@
     border-radius: 10px;
     margin: 12px; 
     background-color: #eee !important;
-    color : black;
-
+    color : black !important;
     padding : 0.3em 0.6em;
 }
 
 .addLibraryBtn:hover{ 
-    background-color: black;
+    background-color: black !important;
+    color : white !important;
+
 }
 
-.addLibraryBtn:focus{
-    border : 2px solid black !important;
-}
 
 
 .librarylink :hover {

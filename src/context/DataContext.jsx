@@ -11,14 +11,12 @@ const DataProvider = ({children}) => {
             text : "읽고 난 책의 후기를 남겨주세요"
         }
     ])
-
     
     const [myBook, setMyBook] = useState([]);
     const [myLib, setMyLib] = useState([]);
     const [addMbti, setAddMbti] = useState([]); 
     const [commentCount, setCommentCount] = useState();
     const [mbtipick, setMbtiPick] = useState();
-
 
     const value = {
         state : {user, allCommnets, commentCount, myBook, myLib, addMbti},

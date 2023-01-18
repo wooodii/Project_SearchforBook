@@ -23,25 +23,32 @@ function NavComp() {
     navigate("/");
   }
 
+
+
   return (
     <>
      <nav style={{padding : "2em 0", fontSize : "1.2em", position : "abosulte", top : 0}} className="navbar">
                 <div>
-                    <button style={{marginLeft : "1.5em", marginRight : "1.5em", fontSize : "1.2em", fontWeight : "bold"}}>Search for Books</button>
+                    <button onClick={() => (navigate('/Home'))}
+                      style={{marginLeft : "1.5em", marginRight : "1.5em", fontSize : "1.2em", fontWeight : "bold"}}>
+                      Search for Books</button>
                 </div>
                 
                 <div>
-                    <button style={{marginRight : "1.5em", fontSize : "1.2em", }} onClick={() => (navigate('/Home'))}>  홈 </button>
-                    <button style={{marginRight : "1.5em",  fontSize : "1.2em"}} onClick={() => (navigate('/RecommendBook/2'))}> 도서추천</button>
-                    <button style={{marginRight : "1.5em",  fontSize : "1.2em"}} onClick={() => (navigate('/RecommendBook/3'))}>  도서검색</button>
-                    <button style={{marginRight : "1.5em",  fontSize : "1.2em"}} onClick={() => (navigate('/RecommendBook/4'))} > 도서관안내 </button>
+                    <button className="navbtn" style={{marginRight : "1.5em", fontSize : "1.2em", }} onClick={() => (navigate('/Home'))}>  홈 </button>
+                    <button className="navbtn" style={{marginRight : "1.5em",  fontSize : "1.2em"}} onClick={() => (navigate('/RecommendBook/2'))}> 도서추천</button>
+                    <button className="navbtn" style={{marginRight : "1.5em",  fontSize : "1.2em"}} onClick={() => (navigate('/RecommendBook/3'))}>  도서검색</button>
+                    <button className="navbtn" style={{marginRight : "1.5em",  fontSize : "1.2em"}} onClick={() => (navigate('/RecommendBook/4'))} > 도서관안내 </button>
                 </div>
 
                 <div style={{marginRight : "1.5em",}}>
                 {login ? (
                 <div>
-                  <button style={{all : "unset"}} onClick={() => (navigate('/mypage'))}> <CgUser/> {data.state.user.name}님의 마이페이지　</button> 
-                  <button style={{padding:"4px"}} variant="outline-dark" onClick={logOut}> 로그아웃 </button>
+                  <button className="navbtn" 
+                  style={{all : "unset"}} 
+                  onClick={() => (navigate('/mypage'))}> 
+                  <CgUser/> {data.state.user.name}님의 마이페이지　</button> 
+                  <button className="navbtn" style={{padding:"4px"}} variant="outline-dark" onClick={logOut}> 로그아웃 </button>
                 </div>
               ) : (
                 <div>

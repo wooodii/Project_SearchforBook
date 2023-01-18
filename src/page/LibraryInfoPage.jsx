@@ -45,7 +45,8 @@ const LibraryInfoPage = () => {
                                 <PageNotFound/>
                             }
                         }).slice(offset, offset + limit).map((val, index) => {
-                            return <LibraryInfomation key={val.id} 
+                            return <LibraryInfomation 
+                                key={val.id} 
                                 도서관명={val.도서관명} 자료실={val.도서관유형} 
                                 소재지도로명주소={val.소재지도로명주소} 
                                 휴관일={val.휴관일} 

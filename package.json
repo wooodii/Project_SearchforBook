@@ -51,7 +51,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
-  "homepage": "https://wooodii/github.io/Project_SearchforBook",
+  "homepage": "https://wooodii.github.io/Project_SearchforBook",
   "eslintConfig": {
     "extends": [
       "react-app",

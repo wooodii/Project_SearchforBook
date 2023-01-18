@@ -13,12 +13,12 @@ a {
 
 .menubar_btn2:hover{
     border:2px solid black;
+    transition-duration: 500ms;
     padding  : "3px";
     .iconsetting{
         color : gray;
     }
 }
-
 
 
 .menubar_btn2:hover{
@@ -35,6 +35,7 @@ a {
     .iconsetting{
         color : gray;
     }
+    transition-duration: 500ms;
 }
 
 .menu_btn{

@@ -9,7 +9,7 @@ import { IconContext } from "react-icons";
 const Menubar = () => {
 
     const MenuBar = [
-      {id : 1, title : "목차", icon : <RiBookmark3Fill/> },
+      {id : 1, title : "전체메뉴", icon : <RiBookmark3Fill/> },
       {id : 2, title : "도서추천", icon : <RiBookmarkFill/>},
       {id : 3, title : "도서검색", icon : <RiFileSearchFill/>  },
       {id : 4, title : "도서관안내", icon :  <RiFileSearchLine/>},
@@ -36,15 +36,20 @@ const Menubar = () => {
             <button className ="menu_btn1">
             <div className="menubar_btn2"
                 style={{ borderRadius : "50px", marginTop : "1em"}}>
-                    <div style={{ backgroundColor : "#eee", borderRadius : "50px", width : "4.5em", height : "4.5em", margin : "0.3em"}}>
+                    <div style={{ 
+                        backgroundColor : "#eee", 
+                        borderRadius : "50px", width : "4.5em", height : "4.5em", margin : "0.3em"}}>
                         <IconContext.Provider 
-                            value={{width : "3em", height : "3em", size :"2.2em", className : "iconsetting"}}>
+                            value={{width : "3em", 
+                            height : "3em", size :"2.2em", 
+                            className : "iconsetting"}}>
                           {menu.icon}
                         </IconContext.Provider>
                     </div>
             </div>
             </button>
-            <p className="menutitle" style={{color : "black", marginTop : "1em", marginBottom : "1em"}}> 
+            <p className="menutitle" 
+            style={{color : "black", marginTop : "1em", marginBottom : "1em"}}> 
               {menu.title}
             </p> 
             </NavLink> ))}

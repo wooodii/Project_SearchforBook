@@ -25,7 +25,7 @@ const SearchResultList = ({도서관명, 자료실, 서명, 저자, 출판사}) 
                         <Col  xs={2}>
 
 
-                        <button className="cartBtn" onClick={() => (likebook)}>
+                        <button className="cartBtn" onClick={likebook}>
                             저장하기
                         </button>
 
