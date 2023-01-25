@@ -26,9 +26,9 @@ const CityofRead = () => {
 
             {busandata.map((i ,index) => (
 
-            <Card style={{ width: '28em', margin : "2em 1.5em"}}> 
+            <Card style={{ width: '28em', margin : "2em 1.5em", height : "40em"}}> 
               <Card.Img
-                variant="top" 
+                variant="top" width="100%" height="350em"
                 src={require(`../asset/publish/${i.img}`)} />
               <Card.Body>
               <Card.Title>
@@ -36,8 +36,8 @@ const CityofRead = () => {
                   {i.title} 
                 </span>
               </Card.Title>
-              <Card.Text style={{marginTop :"1.2em", textAlign : "left"}}>
-                <span style={{fontSize : "1.5em", color : "gray"}}>
+              <Card.Text style={{marginTop :"1.2em", textAlign : "center"}}>
+                <span style={{fontSize : "1.4em",  height: "150px"}}>
                     {i.context}</span> 
                 </Card.Text>
               <Button type="button" className="btn_busan" 

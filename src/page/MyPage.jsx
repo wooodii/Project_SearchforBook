@@ -24,9 +24,9 @@ const MyPage = () => {
     const [modalShow, setModalShow] = useState(false);
 
     return ( 
-        <div className="BOX" style={{margin : "0 8em"}}>
-
-            <div style={{marginTop : "10vh"}}> 
+        <div style={{backgroundColor : "#F2F0EB", padding : "20px"}}>
+        <div className="BOX" style={{margin : "3em 8em 0 8em"}}>
+            <div > 
                 <Row>
                     <Col className="titleBox">
                         <h1 className='mypage'> Mypage </h1>
@@ -49,7 +49,7 @@ const MyPage = () => {
                 <Row style={{margin : "8vh 0 8vh 0"}}>
                     <Col >
                         <p style={{fontSize : "1.5em", marginTop : "2em"}}> 도서 저장 내역 </p>
-                        <div style={{overflow : "scroll", marginTop : "-0.5em"}} className="reservationbox">
+                        <div style={{overflow : "scroll", marginTop : "-0.5em",  backgroundColor : "white"}} className="reservationbox">
                                 <div >
                                     <Row>
                                         <div>
@@ -73,7 +73,7 @@ const MyPage = () => {
                     </Col>
                     <Col>
                         <p style={{fontSize : "1.6em"}}> 도서대출현황 </p>
-                        <div className="borrowbox">
+                        <div className="borrowbox" style={{ backgroundColor : "white"}}>
                             <Row style= {{borderRadius : "10px", margin : "2em"}}>
                                 <div style={{border : "2px solid gray", marginTop : "1em", borderRadius : "10px"}} >
                                 <Row>
@@ -96,7 +96,7 @@ const MyPage = () => {
                     </Col>
                     <Col>
                         <p  style={{fontSize : "1.5em", marginTop : "2em"}}> 단골도서관</p>
-                        <div style={{overflow : "scroll", marginTop : "-0.5em"}} className="reservationbox">
+                        <div style={{overflow : "scroll", marginTop : "-0.5em", backgroundColor : "white"}} className="reservationbox">
                                 <div >
                                 <Row>
                                 {/** [book.도서관명] 배열로 여러개 넣는 경우 사용 */}
@@ -117,7 +117,7 @@ const MyPage = () => {
                         
                         <Col>
                             <p style={{fontSize : "2em", marginTop : "2em"}} > 도서후기작성</p>
-                        <div className="bookcommentbox" style={{marginTop : "0.5em"}}>
+                        <div className="bookcommentbox" style={{marginTop : "0.5em",  backgroundColor : "white"}}>
                             <>
                                 { login
                                     ? 
@@ -125,7 +125,8 @@ const MyPage = () => {
                                     <div>{} 권의 리뷰를 작성하셨습니다. </div>
                                     <div>{} 님은 대체로 {} 분야의 책을 주로 읽어요! </div>
                                 </div>
-                                    : <div style={{marginTop : "2em", fontSize : "1.3em"}}>
+                                    : 
+                                <div style={{marginTop : "2em", fontSize : "1.3em"}}>
                                     로그인 후 후기를 작성해주세요
                                 </div>
                                 }
@@ -147,6 +148,7 @@ const MyPage = () => {
                     </Row>
                 </Row>
             </div>
+        </div>
         </div>
     );
 }

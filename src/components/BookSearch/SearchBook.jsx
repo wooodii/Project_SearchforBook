@@ -80,6 +80,7 @@ import TopSearch from './TopSearch';
                          (
                             <div>
                             <p style={{textAlign : "center", fontSize :"1.3em",fontWeight : "bold"}}>실시간 인기검색어</p>
+                            
                             <TopSearch/>
                             </div>
 

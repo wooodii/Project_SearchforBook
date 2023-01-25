@@ -70,7 +70,9 @@ const BusanMap = ({searchPlace}) => {
     
     return (
         <> 
-        <div id="map" style={{width:"100%", height:"50%"}}></div>
+        <div id="map" style={{width:"100%", height:"100%", marginLeft : "4em"}}>
+                
+        </div>
         </>
     );
 }

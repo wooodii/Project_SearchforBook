@@ -44,7 +44,7 @@ const NewBooks = () => {
                 {bookInfo ?
                 bookInfo.filter((i, index ) => (index == 4)).map((i, index) => (
                     <span key={i.id} style={{display: "flex"}}>
-                    <img style={{width : "13em", height : "16em", display : "inline-block", margin: "1em"}} src={i.image && i.image} alt="" />
+                    <img style={{width : "13em", height : "16em", display : "inline-block", margin: "1em", border : "2px solid gray"}} src={i.image && i.image} alt="" />
                     <div>{i.title}</div>
                 </span>
             )): <div>
@@ -57,7 +57,7 @@ const NewBooks = () => {
                 {bookInfo ?
                 bookInfo.filter((i, index ) => (index == 5)).map((i, index) => (
                     <span key={i.id} style={{display: "flex"}}>
-                    <img style={{width : "13em", height : "16em", display : "inline-block", margin: "1em"}} src={i.image && i.image} alt="" />
+                    <img style={{width : "13em", height : "16em", display : "inline-block", margin: "1em", border : "2px solid gray"}} src={i.image && i.image} alt="" />
                     <div>{i.title}</div>
                 </span>
             )): <div>
@@ -70,7 +70,7 @@ const NewBooks = () => {
                 {bookInfo ?
                 bookInfo.filter((i, index ) => (index == 6)).map((i, index) => (
                     <span key={i.id} style={{display: "flex"}}>
-                    <img style={{width : "13em", height : "20em", display : "inline-block", margin: "1em"}} src={i.image && i.image} alt="" />
+                    <img style={{width : "13em", height : "16em", display : "inline-block", margin: "1em", border : "2px solid gray"}} src={i.image && i.image} alt="" />
                     <div>{i.title}</div>
                 </span>
             )): <div>
@@ -83,7 +83,7 @@ const NewBooks = () => {
                 {bookInfo ?
                 bookInfo.filter((i, index ) => (index == 7)).map((i, index) => (
                     <span key={i.id} style={{display: "flex"}}>
-                    <img style={{width : "13em", height : "16em", display : "inline-block", margin: "1em"}} src={i.image && i.image} alt="" />
+                    <img style={{width : "13em", height : "16em", display : "inline-block", margin: "1em", border : "2px solid gray"}} src={i.image && i.image} alt="" />
                     <div>{i.title}</div>
                 </span>
             )): <div>
@@ -96,7 +96,7 @@ const NewBooks = () => {
                 {bookInfo ?
                 bookInfo.filter((i, index ) => (index == 8)).map((i, index) => (
                     <span key={i.id} style={{display: "flex"}}>
-                    <img style={{width : "13em", height : "16em", display : "inline-block", margin: "1em"}} src={i.image && i.image} alt="" />
+                    <img style={{width : "13em", height : "16em", display : "inline-block", margin: "1em", border : "2px solid gray"}} src={i.image && i.image} alt="" />
                     <div>{i.title}</div>
                 </span>
             )): <div>
@@ -109,7 +109,7 @@ const NewBooks = () => {
                 {bookInfo ?
                 bookInfo.filter((i, index ) => (index == 9)).map((i, index) => (
                     <span key={i.id} style={{display: "flex"}}>
-                    <img style={{width : "13em", height : "16em", display : "inline-block", margin: "1em"}} src={i.image && i.image} alt="" />
+                    <img style={{width : "13em", height : "16em", display : "inline-block", margin: "1em", border : "2px solid gray"}} src={i.image && i.image} alt="" />
                     <div>{i.title}</div>
                 </span>
             )): <div>
@@ -122,7 +122,7 @@ const NewBooks = () => {
                 {bookInfo ?
                 bookInfo.filter((i, index ) => (index == 3)).map((i, index) => (
                     <span key={i.id} style={{display: "flex"}}>
-                    <img style={{width : "13em", height : "16em", display : "inline-block", margin: "1em"}} src={i.image && i.image} alt="" />
+                    <img style={{width : "13em", height : "16em", display : "inline-block", margin: "1em", border : "2px solid gray"}} src={i.image && i.image} alt="" />
                     <div>{i.title}</div>
                 </span>
             )): <div>

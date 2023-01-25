@@ -43,7 +43,7 @@ const BookSlide1 = () => {
                 <div className='slideImg' key={index}>
                   <Row>
                     <div style={{position : "relative"}}>
-                      <img style={{width : "14em", height : "20em", objectFit: "fill"}} 
+                      <img style={{width : "14em", height : "20em", objectFit: "fill", border :"2px solid gray", padding : "3px"}} 
                         src={require(`../../asset/mbti/${book.bookImg}`) }></img>
                     </div>
                   </Row>

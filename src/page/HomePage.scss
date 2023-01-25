@@ -20,22 +20,16 @@
 
 body{
     font-family : 'GowunBatang-Regular';
+    box-sizing: border-box;
 }
+
+
 
 .background_Image{
-    background-image: url('../asset/42491.jpg');
+    background-image: url('../asset/623333.jpg');
     background-size: cover;
     width : 100vw;
+    height : 100vh;
+    background-repeat : no-repeat;
 }
 
-.main-container {
-    ul{
-        scroll-behavior: smooth;
-        position :relative;
-        width : 100vw;
-        height : 70vh;
-        padding-left: 10vw;
-        box-sizing: border-box;
-        overflow: auto;
-    }
-}

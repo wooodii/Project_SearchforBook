@@ -49,8 +49,8 @@ const BookList = [
   {id : 7, title : "명량한 은둔자", author : "캐럴라인 냅", bookImg : "cheerfulHermit.jpg"}, 
   {id : 8, title : "트렌트 코리아 2023", author : " 김난도 외 9명", bookImg : "trendKorea2023.jpg"}, 
   {id : 9, title : "불편한 편의점 ", author : "김호연", bookImg : "uncomfortableStore.jpg"}, 
-  {id : 10, title : "파친코1", author : "이민진", bookImg : "pachinko1.jpg"}, 
-  {id : 11, title : "명량한 은둔자", author : "캐럴라인 냅", bookImg : "cheerfulHermit.jpg"}, 
+  {id : 1, title : "파친코1", author : "이민진", bookImg : "pachinko1.jpg"}, 
+  {id : 1, title : "명량한 은둔자", author : "캐럴라인 냅", bookImg : "cheerfulHermit.jpg"}, 
 ]
 
 
@@ -72,7 +72,7 @@ const BookList = [
                             padding : "0.6em 1em", borderBottomLeftRadius : "5px", borderBottomRightRadius : "5px", zIndex : "999", fontWeight : "500"}}> 
                               <span style={{marginLeft : "-0.8em"}}>  {book.id}</span> 
                               </span>
-                      <img style={{width : "14em", height : "20em", objectFit: "fill"}} 
+                      <img style={{width : "14em", height : "20em", objectFit: "fill", border : "2px solid gray"}} 
                         src={require(`../../asset/weeklybest/${book.bookImg}`) }></img>
                     </div>
                   </Row>

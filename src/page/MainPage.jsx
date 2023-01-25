@@ -22,7 +22,7 @@ const MainPage = () => {
       }
 
     return (
-        <div style={{width : "100%", height : "100%", overflow: "hidden", margin : "0",position : "relative"}}>
+        <div style={{width : "100%", height : "120vh", overflow: "hidden", margin : "0", position : "relative"}}>
 
             <video width="100%" loop muted controls autoPlay style={{position : "absolute", left : 0}}>
             <source src={mainpage} type="video/mp4" /> 해당 브라우저는 동영상 제공을 지원하지 않습니다.
@@ -30,7 +30,8 @@ const MainPage = () => {
 
               <nav style={{padding : "2em 0", fontSize : "1.2em", position : "abosulte", top : 0}} className="navbar">
                 <div>
-                    <button style={{marginLeft : "1.5em", marginRight : "1.5em", fontSize : "1.2em", fontWeight : "bold"}}>Search for Books</button>
+                    <button style={{marginLeft : "1.5em", marginRight : "1.5em", fontSize : "1.4em", fontWeight : "bold"}}>
+                      Search for Books</button>
                 </div>
                 
                 <div>

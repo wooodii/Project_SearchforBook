@@ -154,8 +154,8 @@ const MbtiBook = () => {
                 </div>
             </div>
              
-            <div class="back">
-            <div style={{marginTop : "7em"}}>
+            <div class="back" style={{backgroundColor : "#F2F0EB"}}>
+            <div style={{marginTop : "7em", fontWeight : "bold"}}>
               <h1>{item.title}</h1>
               
               </div>
@@ -180,7 +180,7 @@ const MbtiBook = () => {
                 </div>
             </div>
              
-            <div class="back" > <div style={{marginTop : "7em"}}>
+            <div class="back"  style={{backgroundColor : "#F2F0EB"}}> <div style={{marginTop : "7em"}}>
               <h1>{item.title}</h1>
               <p style={{fontSize : "1.2em"}}>{item.subtitle}</p>  
              <p> {item.booktitle} </p> 

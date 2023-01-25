@@ -28,12 +28,11 @@ function SamplePrevArrow(props) {
   );
 }
 
-
 const BookPublishPage = () => {
   const bookpubData = [
     {id : 1, title : "호밀밭", front : "호밀밭로고.png",  
       back : "호밀밭홈.png", list : "도서구매",  area : "부산광역시 수영구 연수로 357번길 17-8 (48231)", 
-      des : "http://www.homilbooks.com/", sec : "세상 모든 것에 감탄하는 지혜로운 사람들의 공간",
+      des : "http://www.homilbooks.com/", sec : "세상 모든 것에 감탄하는 지혜로운 사람들의 공간, 세상의 모든 소중한 ‘무늬들’ 과 오래오래 함께 하길 희망하며 더욱 정진하겠습니다.",
       s1 : "주간베스트 도서", s2 : "감성공간", s3 : "재방문 많은"},
     {id : 2, title : "산지니", front : "산지니로고.jpg",  
       back : "산지니홈.png", list : "독수리로고", 
@@ -68,8 +67,8 @@ const BookPublishPage = () => {
         </div>
 
 
-        <div style={{border : "2px solid gray", padding : "5em 5em"}}>
-
+        <div style={{
+         padding : "5em 5em", backgroundColor : "#D9CCC1", margin : "0em 10em", borderRadius : "10px"}}>
         <Slider {...settings}>
           {bookpubData.map((i, index) => (
                 <div class="component">
@@ -111,17 +110,16 @@ const BookPublishPage = () => {
                     <li></li>
                   </ul>
                   
-        <figcaption style={{marginLeft :"12em", width : "35em"}}>
-
+        <figcaption style={{marginLeft :"12em", width : "30em", backgrounColor : "#fff"}}>
           <div style={{
-              border : "2px solid gray", display : "inline-block", 
-              padding : "0.2em 0.3em", borderRadius : "5px",
+              display : "inline-block", backgroundColor : "#593D2D", 
+              padding : "0.3em 0.5em", borderRadius : "5px", color : "white",
               marginRight : "0.3em"}}> {i.s1}</div>
-          <div style={{border : "2px solid gray", marginRight : "0.3em",
-              display : "inline-block", padding : "0.2em 0.3em", 
+          <div style={{marginRight : "0.3em", backgroundColor : "#593D2D", 
+              display : "inline-block",   padding : "0.3em 0.5em", color : "white",
               borderRadius : "5px"}}>{i.s2} </div>
-          <div style={{border : "2px solid gray",
-              display : "inline-block", padding : "0.2em 0.3em", 
+          <div style={{
+              display : "inline-block",   padding : "0.3em 0.5em", backgroundColor : "#593D2D", color : "white",
               borderRadius : "5px"}}>{i.s3} </div>
 
           <a  href={i.des}>
@@ -129,28 +127,29 @@ const BookPublishPage = () => {
           </a>
           <span style={{fontSize : "1.3em"}}>{i.area}</span>
           <hr/>
-            <div style={{fontSize : "1.5em"}}>
+            <div style={{fontSize : "1.5em", textAlign : "left", wordWrap : "breakAll"}}>
               {i.sec}
             </div>
 
-            <Row style={{marginTop : "2em"}}>
+            <Row style={{marginTop : "2em", backgroundColor : "#fff", width : "200px", borderRadius : "5px", padding : "4px 2px"}}>
 
           <IconContext.Provider  value={{size : "2em"}}>
-          <Col xs={1} className='sns-icon' style={{marginRight : "1em", color : "pink"}}>
+          <Col xs={1} className='sns-icon' style={{marginRight : "1em", color : "#F4898E"}}>
           <IoLogoInstagram/> 
           </Col>
 
-          <Col xs={1} className='sns-icon' style={{marginRight : "1em", coloe : "blue"}}>
+          <Col xs={1} className='sns-icon' style={{marginRight : "1em", color : "darkblue"}}>
           <IoLogoFacebook/>
           </Col>
 
           <Col xs={1} className='sns-icon' style={{marginRight : "1em", color : "skyblue"}}>
           <IoLogoTwitter /> 
           </Col>
-          <Col xs={1} className='sns-icon' style={{marginRight : "1em",color : "red"}}>
+          <Col xs={1} className='sns-icon' style={{color : "red"}}>
           <IoLogoYoutube/> 
           </Col>
           </IconContext.Provider>
+
         
             </Row>
         
